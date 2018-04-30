@@ -10,3 +10,6 @@ I will be done by tomorrow! 31/04
 As I said the rep' will also contain presentations I made etc.
 
 Hope you will enjoy my work and thanks for taking the time to look at it!
+
+Please Notice that I can provide and explain at any time the projects and outcomes I have on demand or in person as all the material is
+saved on my laptop!
