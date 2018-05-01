@@ -1,7 +1,0 @@
-Jul 15, 2015 2:29:17 AM-->INFO:Fuel task Started Fueling Time 1830.0:)
-Jul 15, 2015 2:29:21 AM-->INFO:Fuel task Endded in: 1830.0:)
-Jul 15, 2015 2:29:22 AM-->INFO:Auto Clean Endded in: 0.0:)
-Jul 15, 2015 2:29:22 AM-->INFO:Auto Clean Started Cleaning Time0.0:)
-Jul 15, 2015 2:29:24 AM-->INFO:Manual Clean Endded in: 9.290385:)
-Jul 15, 2015 2:29:25 AM-->INFO:Car9001 exited the GasStation:)
-Jul 15, 2015 2:29:25 AM-->INFO:Manual Clean Started:)
