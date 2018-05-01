@@ -1,0 +1,37 @@
+﻿Build started 15-Nov-15 17:16:11.
+     1>Project "D:\Yigal\A-------------------------------------A\C++ workPlace\סדנא בתיכנות מונחה עצמים\workplace\Labs\Lab10_1- old model\ConsoleApplication1\ConsoleApplication1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt CircleException.cpp program.cpp Shape.cpp Circle.cpp ShapeException.cpp Square.cpp SquareException.cpp
+         SquareException.cpp
+         Square.cpp
+     1>d:\yigal\a-------------------------------------a\c++ workplace\סדנא בתיכנות מונחה עצמים\workplace\labs\lab10_1- old model\consoleapplication1\square.cpp(15): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\yigal\a-------------------------------------a\c++ workplace\סדנא בתיכנות מונחה עצמים\workplace\labs\lab10_1- old model\consoleapplication1\square.cpp(27): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>d:\yigal\a-------------------------------------a\c++ workplace\סדנא בתיכנות מונחה עצמים\workplace\labs\lab10_1- old model\consoleapplication1\square.cpp(32): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+     1>d:\yigal\a-------------------------------------a\c++ workplace\סדנא בתיכנות מונחה עצמים\workplace\labs\lab10_1- old model\consoleapplication1\square.cpp(78): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         ShapeException.cpp
+         Circle.cpp
+     1>d:\yigal\a-------------------------------------a\c++ workplace\סדנא בתיכנות מונחה עצמים\workplace\labs\lab10_1- old model\consoleapplication1\circle.cpp(18): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\yigal\a-------------------------------------a\c++ workplace\סדנא בתיכנות מונחה עצמים\workplace\labs\lab10_1- old model\consoleapplication1\circle.cpp(45): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>d:\yigal\a-------------------------------------a\c++ workplace\סדנא בתיכנות מונחה עצמים\workplace\labs\lab10_1- old model\consoleapplication1\circle.cpp(50): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>d:\yigal\a-------------------------------------a\c++ workplace\סדנא בתיכנות מונחה עצמים\workplace\labs\lab10_1- old model\consoleapplication1\circle.cpp(53): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Shape.cpp
+     1>d:\yigal\a-------------------------------------a\c++ workplace\סדנא בתיכנות מונחה עצמים\workplace\labs\lab10_1- old model\consoleapplication1\shape.cpp(12): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\yigal\a-------------------------------------a\c++ workplace\סדנא בתיכנות מונחה עצמים\workplace\labs\lab10_1- old model\consoleapplication1\shape.cpp(46): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\yigal\a-------------------------------------a\c++ workplace\סדנא בתיכנות מונחה עצמים\workplace\labs\lab10_1- old model\consoleapplication1\shape.cpp(92): warning C4101: 'delimeter': unreferenced local variable
+         program.cpp
+         CircleException.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Yigal\A-------------------------------------A\C++ workPlace\סדנא בתיכנות מונחה עצמים\workplace\Labs\Lab10_1- old model\ConsoleApplication1\Debug\ConsoleApplication1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Yigal\A-------------------------------------A\C++ workPlace\סדנא בתיכנות מונחה עצמים\workplace\Labs\Lab10_1- old model\ConsoleApplication1\Debug\ConsoleApplication1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Yigal\A-------------------------------------A\C++ workPlace\סדנא בתיכנות מונחה עצמים\workplace\Labs\Lab10_1- old model\ConsoleApplication1\Debug\ConsoleApplication1.lib" /MACHINE:X86 Debug\CircleException.obj
+         Debug\program.obj
+         Debug\Shape.obj
+         Debug\Circle.obj
+         Debug\ShapeException.obj
+         Debug\Square.obj
+         Debug\SquareException.obj
+         ConsoleApplication1.vcxproj -> D:\Yigal\A-------------------------------------A\C++ workPlace\סדנא בתיכנות מונחה עצמים\workplace\Labs\Lab10_1- old model\ConsoleApplication1\Debug\ConsoleApplication1.exe
+     1>Done Building Project "D:\Yigal\A-------------------------------------A\C++ workPlace\סדנא בתיכנות מונחה עצמים\workplace\Labs\Lab10_1- old model\ConsoleApplication1\ConsoleApplication1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.09

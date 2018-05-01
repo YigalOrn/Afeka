@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01- vector", "01- vector\01- vector.vcproj", "{C2F600D0-B98A-41E4-B791-B2DE34CB83AC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02- iterator", "02- iterator\02- iterator.vcproj", "{01B302A3-8557-49D2-A63D-332A60680638}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03- my iterator", "03- my iterator\03- my iterator.vcproj", "{EE4C2747-DE4F-4E4F-BE5A-E66C3FEF97EE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04- object function", "04- object function\04- object function.vcproj", "{B6BDD485-34A7-4B44-A7A7-49765FF67DC3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05- map", "05- map\05- map.vcproj", "{5CD9F666-5A77-4F83-85A5-2B6FA447A0F4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06- map from reference", "06- map from reference\06- map from reference.vcproj", "{7EE55236-15F8-41B4-B1DA-C1999E76AA37}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07- multimap", "07- multimap\07- multimap.vcproj", "{43021F91-67E3-4B22-A82B-80BACBAAF5D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2F600D0-B98A-41E4-B791-B2DE34CB83AC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C2F600D0-B98A-41E4-B791-B2DE34CB83AC}.Debug|Win32.Build.0 = Debug|Win32
+		{C2F600D0-B98A-41E4-B791-B2DE34CB83AC}.Release|Win32.ActiveCfg = Release|Win32
+		{C2F600D0-B98A-41E4-B791-B2DE34CB83AC}.Release|Win32.Build.0 = Release|Win32
+		{01B302A3-8557-49D2-A63D-332A60680638}.Debug|Win32.ActiveCfg = Debug|Win32
+		{01B302A3-8557-49D2-A63D-332A60680638}.Debug|Win32.Build.0 = Debug|Win32
+		{01B302A3-8557-49D2-A63D-332A60680638}.Release|Win32.ActiveCfg = Release|Win32
+		{01B302A3-8557-49D2-A63D-332A60680638}.Release|Win32.Build.0 = Release|Win32
+		{EE4C2747-DE4F-4E4F-BE5A-E66C3FEF97EE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EE4C2747-DE4F-4E4F-BE5A-E66C3FEF97EE}.Debug|Win32.Build.0 = Debug|Win32
+		{EE4C2747-DE4F-4E4F-BE5A-E66C3FEF97EE}.Release|Win32.ActiveCfg = Release|Win32
+		{EE4C2747-DE4F-4E4F-BE5A-E66C3FEF97EE}.Release|Win32.Build.0 = Release|Win32
+		{B6BDD485-34A7-4B44-A7A7-49765FF67DC3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B6BDD485-34A7-4B44-A7A7-49765FF67DC3}.Debug|Win32.Build.0 = Debug|Win32
+		{B6BDD485-34A7-4B44-A7A7-49765FF67DC3}.Release|Win32.ActiveCfg = Release|Win32
+		{B6BDD485-34A7-4B44-A7A7-49765FF67DC3}.Release|Win32.Build.0 = Release|Win32
+		{5CD9F666-5A77-4F83-85A5-2B6FA447A0F4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5CD9F666-5A77-4F83-85A5-2B6FA447A0F4}.Debug|Win32.Build.0 = Debug|Win32
+		{5CD9F666-5A77-4F83-85A5-2B6FA447A0F4}.Release|Win32.ActiveCfg = Release|Win32
+		{5CD9F666-5A77-4F83-85A5-2B6FA447A0F4}.Release|Win32.Build.0 = Release|Win32
+		{7EE55236-15F8-41B4-B1DA-C1999E76AA37}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7EE55236-15F8-41B4-B1DA-C1999E76AA37}.Debug|Win32.Build.0 = Debug|Win32
+		{7EE55236-15F8-41B4-B1DA-C1999E76AA37}.Release|Win32.ActiveCfg = Release|Win32
+		{7EE55236-15F8-41B4-B1DA-C1999E76AA37}.Release|Win32.Build.0 = Release|Win32
+		{43021F91-67E3-4B22-A82B-80BACBAAF5D8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43021F91-67E3-4B22-A82B-80BACBAAF5D8}.Debug|Win32.Build.0 = Debug|Win32
+		{43021F91-67E3-4B22-A82B-80BACBAAF5D8}.Release|Win32.ActiveCfg = Release|Win32
+		{43021F91-67E3-4B22-A82B-80BACBAAF5D8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

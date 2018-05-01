@@ -1,0 +1,47 @@
+﻿Build started 15-Sep-15 13:23:09.
+     1>Project "C:\Users\Y-PC\Desktop\C++ workPlace\HW\part _2\Airline\Airline\Airline\Airline.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Y-PC\Desktop\C++ workPlace\HW\part _2\Airline\Airline\Debug\Airline.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Y-PC\Desktop\C++ workPlace\HW\part _2\Airline\Airline\Debug\Airline.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Y-PC\Desktop\C++ workPlace\HW\part _2\Airline\Airline\Debug\Airline.lib" /MACHINE:X86 Debug\main.obj
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall Person::Person(char const *,int)" (??0Person@@QAE@PBDH@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall Person::~Person(void)" (??1Person@@UAE@XZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall Plane::Plane(int)" (??0Plane@@QAE@H@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall Pilot::Pilot(class Person const &,int,double,int)" (??0Pilot@@QAE@ABVPerson@@HNH@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall Date::Date(int,int,int)" (??0Date@@QAE@HHH@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class Date const &)" (??6@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@ABVDate@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "class Date __cdecl operator+(class Date const &,int)" (??H@YA?AVDate@@ABV0@H@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "class Date __cdecl operator+(int,class Date const &)" (??H@YA?AVDate@@HABV0@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Date::operator()(int,int,int)" (??RDate@@QAEXHHH@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall Flight::Flight(class Plane *,class Date const &,char const *,class Pilot *,int)" (??0Flight@@QAE@PAVPlane@@ABVDate@@PBDPAVPilot@@H@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall Flight::~Flight(void)" (??1Flight@@QAE@XZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: class AirCrew const & __thiscall Flight::operator[](char const *)const " (??AFlight@@QBEABVAirCrew@@PBD@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall Customer::Customer(class Person const &)" (??0Customer@@QAE@ABVPerson@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall Ticket::~Ticket(void)" (??1Ticket@@QAE@XZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall Order::Order(class Date const &,class Customer const *,int)" (??0Order@@QAE@ABVDate@@PBVCustomer@@H@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall Order::~Order(void)" (??1Order@@QAE@XZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: class Ticket const * * __thiscall Order::getTickets(void)const " (?getTickets@Order@@QBEPAPBVTicket@@XZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: class Order const & __thiscall Order::operator+=(class Ticket const &)" (??YOrder@@QAEABV0@ABVTicket@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: class Order const & __thiscall Order::operator-=(class Ticket const &)" (??ZOrder@@QAEABV0@ABVTicket@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall Attendant::Attendant(class Person const &,int,double)" (??0Attendant@@QAE@ABVPerson@@HN@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall Airline::Airline(char const *,int,int,int,int,int)" (??0Airline@@QAE@PBDHHHHH@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall Airline::~Airline(void)" (??1Airline@@QAE@XZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall Airline::addFlight(class Flight &)" (?addFlight@Airline@@QAE_NAAVFlight@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall Airline::addPlane(class Plane &)" (?addPlane@Airline@@QAE_NAAVPlane@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall Airline::addCustomer(class Customer &)" (?addCustomer@Airline@@QAE_NAAVCustomer@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall Airline::addCrewMember(class AirCrew &)" (?addCrewMember@Airline@@QAE_NAAVAirCrew@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall Airline::addOrder(class Order &)" (?addOrder@Airline@@QAE_NAAVOrder@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class Airline const &)" (??6@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@ABVAirline@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: class Flight const * * __thiscall Airline::getFlights(void)const " (?getFlights@Airline@@QBEPAPBVFlight@@XZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: int __thiscall Airline::getFlightsAmount(void)const " (?getFlightsAmount@Airline@@QBEHXZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall Airline::addStaffMemberToFlight(class AirCrew &,class Flight &)" (?addStaffMemberToFlight@Airline@@QAE_NAAVAirCrew@@AAVFlight@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall Airline::removeStaffMemberFromFlight(class AirCrew const &,class Flight const &)" (?removeStaffMemberFromFlight@Airline@@QAE_NABVAirCrew@@ABVFlight@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: class Ticket __thiscall Airline::createTicketForFlight(class Flight const &)const " (?createTicketForFlight@Airline@@QBE?AVTicket@@ABVFlight@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall Airline::cancelOrder(class Order const &)" (?cancelOrder@Airline@@QAE_NABVOrder@@@Z) referenced in function _main
+     1>C:\Users\Y-PC\Desktop\C++ workPlace\HW\part _2\Airline\Airline\Debug\Airline.exe : fatal error LNK1120: 34 unresolved externals
+     1>Done Building Project "C:\Users\Y-PC\Desktop\C++ workPlace\HW\part _2\Airline\Airline\Airline\Airline.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.32

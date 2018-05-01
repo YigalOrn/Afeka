@@ -1,0 +1,8 @@
+﻿Build started 31-Oct-15 15:02:13.
+     1>Project "D:\Yigal\A-------------------------------------A\לימודים\הנדסת תוכנה\2התמחות טכנולוגיות תוכנה ומידע\התמחות\סדנא בתכנות מונחה עצמים עם C++\workplace\# EXAMAS\2015-09-21 KK moed A\ConsoleApplication1\ConsoleApplication2\ConsoleApplication2.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(312,5): error MSB3491: Could not write lines to file "Debug\ConsoleA.03823CE3.tlog\ConsoleApplication2.lastbuildstate". The specified path, file name, or both are too long. The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters.
+     1>Done Building Project "D:\Yigal\A-------------------------------------A\לימודים\הנדסת תוכנה\2התמחות טכנולוגיות תוכנה ומידע\התמחות\סדנא בתכנות מונחה עצמים עם C++\workplace\# EXAMAS\2015-09-21 KK moed A\ConsoleApplication1\ConsoleApplication2\ConsoleApplication2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00

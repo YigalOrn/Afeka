@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Airline", "Airline\Airline.vcxproj", "{295E51A1-85CC-461C-BFC4-440A28E9AAB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{295E51A1-85CC-461C-BFC4-440A28E9AAB6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{295E51A1-85CC-461C-BFC4-440A28E9AAB6}.Debug|Win32.Build.0 = Debug|Win32
+		{295E51A1-85CC-461C-BFC4-440A28E9AAB6}.Release|Win32.ActiveCfg = Release|Win32
+		{295E51A1-85CC-461C-BFC4-440A28E9AAB6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

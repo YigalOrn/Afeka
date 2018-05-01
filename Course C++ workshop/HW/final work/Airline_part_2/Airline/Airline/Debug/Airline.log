@@ -1,0 +1,313 @@
+﻿Build started 10/12/2015 4:11:47 PM.
+     1>Project "C:\Users\yigal\Desktop\Airline_part_2\Airline\Airline\Airline.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt AirCrew.cpp Airline.cpp Attendant.cpp Customer.cpp Date.cpp Flight.cpp main.cpp Order.cpp Person.cpp Pilot.cpp Plane.cpp Seat.cpp SpecialEmployee.cpp Ticket.cpp
+         Ticket.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\dateexception.h(14): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(552): note: see declaration of 'strdup'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(16): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(19): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(27): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(80): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(81): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\pilot.h(30): warning C4250: 'Pilot': inherits 'AirCrew::AirCrew::operator ==' via dominance
+         c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(86): note: see declaration of 'AirCrew::operator =='
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(34): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(38): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(44): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(45): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(46): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(65): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         SpecialEmployee.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Seat.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.cpp(9): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.cpp(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Plane.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Pilot.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\dateexception.h(14): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(552): note: see declaration of 'strdup'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(16): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(19): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(27): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(80): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(81): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\pilot.h(30): warning C4250: 'Pilot': inherits 'AirCrew::AirCrew::operator ==' via dominance
+         c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(86): note: see declaration of 'AirCrew::operator =='
+         Person.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.cpp(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.cpp(32): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.cpp(35): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Order.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\dateexception.h(14): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(552): note: see declaration of 'strdup'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(16): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(19): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(27): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(80): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(81): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\pilot.h(30): warning C4250: 'Pilot': inherits 'AirCrew::AirCrew::operator ==' via dominance
+         c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(86): note: see declaration of 'AirCrew::operator =='
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(34): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(38): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(44): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(45): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(46): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(65): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\order.h(36): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\order.h(37): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\order.cpp(54): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\order.cpp(68): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         main.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\dateexception.h(14): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(552): note: see declaration of 'strdup'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(16): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(19): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(27): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(80): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(81): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\pilot.h(30): warning C4250: 'Pilot': inherits 'AirCrew::AirCrew::operator ==' via dominance
+         c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(86): note: see declaration of 'AirCrew::operator =='
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(34): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(38): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(44): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(45): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(46): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(65): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\order.h(36): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\order.h(37): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\attendant.h(14): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\attendant.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\attendant.h(35): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(43): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(49): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(51): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(52): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(53): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(54): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(56): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(82): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(84): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(86): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(88): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(96): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(103): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Flight.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\dateexception.h(14): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(552): note: see declaration of 'strdup'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(16): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(19): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(27): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(80): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(81): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\pilot.h(30): warning C4250: 'Pilot': inherits 'AirCrew::AirCrew::operator ==' via dominance
+         c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(86): note: see declaration of 'AirCrew::operator =='
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(34): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(38): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(44): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(45): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(46): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(65): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.cpp(14): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.cpp(55): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.cpp(96): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.cpp(122): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.cpp(142): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.cpp(162): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.cpp(163): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.cpp(164): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.cpp(165): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.cpp(165): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdlib.h(1316): note: see declaration of 'itoa'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.cpp(176): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.cpp(184): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+         Date.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\dateexception.h(14): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(552): note: see declaration of 'strdup'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(16): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(19): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(27): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.cpp(8): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.cpp(13): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.cpp(62): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.cpp(73): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Customer.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Attendant.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\dateexception.h(14): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(552): note: see declaration of 'strdup'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(16): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(19): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(27): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(80): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(81): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\attendant.h(14): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\attendant.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\attendant.h(35): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\attendant.cpp(12): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\attendant.cpp(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\attendant.cpp(43): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Airline.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\dateexception.h(14): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(552): note: see declaration of 'strdup'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(16): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(19): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(27): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(80): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(81): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\seat.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\pilot.h(30): warning C4250: 'Pilot': inherits 'AirCrew::AirCrew::operator ==' via dominance
+         c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(86): note: see declaration of 'AirCrew::operator =='
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(34): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(38): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(44): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(45): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(46): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\flight.h(65): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\order.h(36): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\order.h(37): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\attendant.h(14): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\attendant.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\attendant.h(35): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(43): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(49): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(51): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(52): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(53): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(54): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(56): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(82): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(84): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(86): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(88): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(96): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(103): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(16): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(79): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(84): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(92): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(104): warning C4101: 'ex': unreferenced local variable
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(112): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(124): warning C4101: 'ex': unreferenced local variable
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(132): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(144): warning C4101: 'ex': unreferenced local variable
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(152): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(164): warning C4101: 'ex': unreferenced local variable
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(173): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(186): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(199): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(199): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdlib.h(1316): note: see declaration of 'itoa'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(200): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(304): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(323): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(332): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(340): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(115): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+         c:\users\yigal\desktop\airline_part_2\airline\airline\airline.cpp(102): note: see reference to function template instantiation 'int Airline::getIndex<Flight>(T *const *,const T &,int) throw(AirLineException) const' being compiled
+                 with
+                 [
+                     T=Flight
+                 ]
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(116): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\airline.h(117): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+         AirCrew.cpp
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(20): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\person.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\dateexception.h(14): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(552): note: see declaration of 'strdup'
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(16): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(19): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\date.h(27): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(80): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.h(81): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.cpp(29): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\airline_part_2\airline\airline\aircrew.cpp(38): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\yigal\Desktop\Airline_part_2\Airline\Debug\Airline.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\yigal\Desktop\Airline_part_2\Airline\Debug\Airline.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\yigal\Desktop\Airline_part_2\Airline\Debug\Airline.lib" /MACHINE:X86 Debug\AirCrew.obj
+         Debug\Airline.obj
+         Debug\Attendant.obj
+         Debug\Customer.obj
+         Debug\Date.obj
+         Debug\Flight.obj
+         Debug\main.obj
+         Debug\Order.obj
+         Debug\Person.obj
+         Debug\Pilot.obj
+         Debug\Plane.obj
+         Debug\Seat.obj
+         Debug\SpecialEmployee.obj
+         Debug\Ticket.obj
+         Airline.vcxproj -> C:\Users\yigal\Desktop\Airline_part_2\Airline\Debug\Airline.exe
+     1>Done Building Project "C:\Users\yigal\Desktop\Airline_part_2\Airline\Airline\Airline.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.34

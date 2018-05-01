@@ -1,0 +1,23 @@
+﻿Build started 03-Sep-15 14:36:58.
+     1>Project "C:\Users\Y-PC\Desktop\C++ workPlace\Labs\Lab11\ConsoleApplication1\ConsoleApplication1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Map.h programcpp.cpp
+         Map.h
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab11\consoleapplication1\map.h(56): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         c:\users\y-pc\desktop\c++ workplace\labs\lab11\consoleapplication1\map.h(79): note: see reference to class template instantiation 'Map<K,V>' being compiled
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab11\consoleapplication1\map.h(64): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab11\consoleapplication1\map.h(86): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab11\consoleapplication1\map.h(145): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         programcpp.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Y-PC\Desktop\C++ workPlace\Labs\Lab11\ConsoleApplication1\Debug\ConsoleApplication1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Y-PC\Desktop\C++ workPlace\Labs\Lab11\ConsoleApplication1\Debug\ConsoleApplication1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Y-PC\Desktop\C++ workPlace\Labs\Lab11\ConsoleApplication1\Debug\ConsoleApplication1.lib" /MACHINE:X86 Debug\Map.obj
+         Debug\MapTemplates.obj
+         Debug\programcpp.obj
+         ConsoleApplication1.vcxproj -> C:\Users\Y-PC\Desktop\C++ workPlace\Labs\Lab11\ConsoleApplication1\Debug\ConsoleApplication1.exe
+     1>Done Building Project "C:\Users\Y-PC\Desktop\C++ workPlace\Labs\Lab11\ConsoleApplication1\ConsoleApplication1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.55

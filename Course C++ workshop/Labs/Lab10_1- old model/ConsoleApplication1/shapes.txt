@@ -1,0 +1,11 @@
+2
+1
+class Circle
+3 red
+45
+2.3
+1
+class Square
+10 blackBlack
+7
+8

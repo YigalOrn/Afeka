@@ -1,0 +1,33 @@
+﻿Build started 31-Aug-15 23:33:49.
+     1>Project "C:\Users\Y-PC\Desktop\C++ workPlace\Labs\Lab10_3- old model\ConsoleApplication1\ConsoleApplication1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Circle.cpp Shape.cpp Square.cpp program.cpp
+         program.cpp
+         Square.cpp
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab10_3- old model\consoleapplication1\square.cpp(15): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab10_3- old model\consoleapplication1\square.cpp(37): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab10_3- old model\consoleapplication1\square.cpp(42): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab10_3- old model\consoleapplication1\square.cpp(85): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Shape.cpp
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab10_3- old model\consoleapplication1\shape.cpp(15): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab10_3- old model\consoleapplication1\shape.cpp(77): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Circle.cpp
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab10_3- old model\consoleapplication1\circle.cpp(18): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab10_3- old model\consoleapplication1\circle.cpp(45): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab10_3- old model\consoleapplication1\circle.cpp(50): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\y-pc\desktop\c++ workplace\labs\lab10_3- old model\consoleapplication1\circle.cpp(53): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Y-PC\Desktop\C++ workPlace\Labs\Lab10_3- old model\ConsoleApplication1\Debug\ConsoleApplication1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Y-PC\Desktop\C++ workPlace\Labs\Lab10_3- old model\ConsoleApplication1\Debug\ConsoleApplication1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Y-PC\Desktop\C++ workPlace\Labs\Lab10_3- old model\ConsoleApplication1\Debug\ConsoleApplication1.lib" /MACHINE:X86 Debug\CircleException.obj
+         Debug\program.obj
+         Debug\Shape.obj
+         Debug\Circle.obj
+         Debug\ShapeException.obj
+         Debug\Square.obj
+         Debug\SquareException.obj
+         ConsoleApplication1.vcxproj -> C:\Users\Y-PC\Desktop\C++ workPlace\Labs\Lab10_3- old model\ConsoleApplication1\Debug\ConsoleApplication1.exe
+     1>Done Building Project "C:\Users\Y-PC\Desktop\C++ workPlace\Labs\Lab10_3- old model\ConsoleApplication1\ConsoleApplication1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.25

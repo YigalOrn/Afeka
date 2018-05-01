@@ -1,0 +1,56 @@
+﻿Build started 10/12/2015 4:13:56 PM.
+     1>Project "C:\Users\yigal\Desktop\part_1\part_1_b\part_1_b_headers\War project\War\War.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Animal.cpp Army.cpp DogZilla.cpp FighterAirCraft.cpp GodZilla.cpp Infantry.cpp MonStars.cpp Pilot.cpp Program.cpp Rifle.cpp SiamAmurai.cpp Soldier.cpp War.cpp
+         War.cpp
+         Soldier.cpp
+         SiamAmurai.cpp
+         Rifle.cpp
+         Program.cpp
+         Pilot.cpp
+         MonStars.cpp
+         Infantry.cpp
+         GodZilla.cpp
+         FighterAirCraft.cpp
+         DogZilla.cpp
+         Army.cpp
+         Animal.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\yigal\Desktop\part_1\part_1_b\part_1_b_headers\War project\Debug\War.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\yigal\Desktop\part_1\part_1_b\part_1_b_headers\War project\Debug\War.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\yigal\Desktop\part_1\part_1_b\part_1_b_headers\War project\Debug\War.lib" /MACHINE:X86 Debug\Animal.obj
+         Debug\Army.obj
+         Debug\DogZilla.obj
+         Debug\FighterAirCraft.obj
+         Debug\GodZilla.obj
+         Debug\Infantry.obj
+         Debug\MonStars.obj
+         Debug\Pilot.obj
+         Debug\Program.obj
+         Debug\Rifle.obj
+         Debug\SiamAmurai.obj
+         Debug\Soldier.obj
+         Debug\War.obj
+     1>Program.obj : error LNK2019: unresolved external symbol "public: __thiscall Army::Army(char const *)" (??0Army@@QAE@PBD@Z) referenced in function "void __cdecl initArmy<class Army>(class Army * *)" (??$initArmy@VArmy@@@@YAXPAPAVArmy@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: __thiscall MonStars::MonStars(char const *)" (??0MonStars@@QAE@PBD@Z) referenced in function "void __cdecl initArmy<class MonStars>(class MonStars * *)" (??$initArmy@VMonStars@@@@YAXPAPAVMonStars@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class War const &)" (??6@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@ABVWar@@@Z) referenced in function "void __cdecl showWarStatistics(class War &)" (?showWarStatistics@@YAXAAVWar@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: __thiscall War::War(class Army * const,class MonStars * const)" (??0War@@QAE@QAVArmy@@QAVMonStars@@@Z) referenced in function "void __cdecl createWar(class War * *)" (?createWar@@YAXPAPAVWar@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: __thiscall War::~War(void)" (??1War@@QAE@XZ) referenced in function "public: void * __thiscall War::`scalar deleting destructor'(unsigned int)" (??_GWar@@QAEPAXI@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: bool __thiscall War::areWeAtWar(void)const " (?areWeAtWar@War@@QBE_NXZ) referenced in function _main
+     1>Program.obj : error LNK2019: unresolved external symbol "public: void __thiscall War::setWarStarted(bool)" (?setWarStarted@War@@QAEX_N@Z) referenced in function "void __cdecl createWar(class War * *)" (?createWar@@YAXPAPAVWar@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: void __thiscall War::supplyAmmunition(enum AmmunitionType)" (?supplyAmmunition@War@@QAEXW4AmmunitionType@@@Z) referenced in function "void __cdecl supplyAmmunition(class War &)" (?supplyAmmunition@@YAXAAVWar@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: void __thiscall War::refuelAirCraft(int)" (?refuelAirCraft@War@@QAEXH@Z) referenced in function "void __cdecl refuelAirCraft(class War &)" (?refuelAirCraft@@YAXAAVWar@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: void __thiscall War::feedForce(float)" (?feedForce@War@@QAEXM@Z) referenced in function "void __cdecl feedForce(class War &)" (?feedForce@@YAXAAVWar@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: void __thiscall War::addSoldier(class Soldier * const)" (?addSoldier@War@@QAEXQAVSoldier@@@Z) referenced in function "void __cdecl addFighter(class War &)" (?addFighter@@YAXAAVWar@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: void __thiscall War::addAnimal(class Animal * const)" (?addAnimal@War@@QAEXQAVAnimal@@@Z) referenced in function "void __cdecl addFighter(class War &)" (?addFighter@@YAXAAVWar@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: char * __thiscall War::lineUpTheTroops(void)const " (?lineUpTheTroops@War@@QBEPADXZ) referenced in function "void __cdecl lineUpTheTroops(class War &)" (?lineUpTheTroops@@YAXAAVWar@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: char * __thiscall War::hit(void)" (?hit@War@@QAEPADXZ) referenced in function "void __cdecl hit(class War &)" (?hit@@YAXAAVWar@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: __thiscall Infantry::Infantry(char *,int,float,int)" (??0Infantry@@QAE@PADHMH@Z) referenced in function "void __cdecl addFighter(class War &)" (?addFighter@@YAXAAVWar@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: __thiscall DogZilla::DogZilla(char *,int,int)" (??0DogZilla@@QAE@PADHH@Z) referenced in function "void __cdecl addFighter(class War &)" (?addFighter@@YAXAAVWar@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: __thiscall SiamAmurai::SiamAmurai(char *,int,int)" (??0SiamAmurai@@QAE@PADHH@Z) referenced in function "void __cdecl addFighter(class War &)" (?addFighter@@YAXAAVWar@@@Z)
+     1>Program.obj : error LNK2019: unresolved external symbol "public: __thiscall GodZilla::GodZilla(char *,int,int,int,int)" (??0GodZilla@@QAE@PADHHHH@Z) referenced in function "void __cdecl addFighter(class War &)" (?addFighter@@YAXAAVWar@@@Z)
+     1>C:\Users\yigal\Desktop\part_1\part_1_b\part_1_b_headers\War project\Debug\War.exe : fatal error LNK1120: 18 unresolved externals
+     1>Done Building Project "C:\Users\yigal\Desktop\part_1\part_1_b\part_1_b_headers\War project\War\War.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.59

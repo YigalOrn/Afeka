@@ -1,0 +1,39 @@
+﻿Build started 9/24/2015 10:49:39 PM.
+     1>Project "C:\Users\yigal\Desktop\C++ workPlace\HW\part _2\Afeka\part _2\Airline\Airline\Airline.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Airline.cpp Flight.cpp main.cpp
+         main.cpp
+     1>c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\seat.h(30): error C2374: 'seatTypes': redefinition; multiple initialization
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\seat.h(30): note: see declaration of 'seatTypes'
+         Flight.cpp
+     1>c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\flight.cpp(12): error C2572: 'Flight::Flight': redefinition of default argument: parameter 1
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\flight.h(26): note: see declaration of 'Flight::Flight'
+     1>c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\flight.cpp(38): error C3867: 'Plane::getMaxNumOfSeats': non-standard syntax; use '&' to create a pointer to member
+     1>c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\flight.cpp(38): error C2446: '<=': no conversion from 'int' to 'const int (__thiscall Plane::* )(void) const'
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\flight.cpp(38): note: There are no conversions from integral values to pointer-to-member values
+     1>c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\flight.cpp(38): error C2296: '<=': illegal, left operand has type 'const int (__thiscall Plane::* )(void) const'
+         Airline.cpp
+     1>c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\seat.h(30): error C2374: 'seatTypes': redefinition; multiple initialization
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\seat.h(30): note: see declaration of 'seatTypes'
+     1>c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\airline.cpp(78): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\airline.cpp(101): error C2248: 'Flight::Flight': cannot access private member declared in class 'Flight'
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\flight.h(50): note: see declaration of 'Flight::Flight'
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\flight.h(13): note: see declaration of 'Flight'
+     1>c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\airline.cpp(132): error C2248: 'Customer::Customer': cannot access private member declared in class 'Customer'
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\customer.h(22): note: see declaration of 'Customer::Customer'
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\customer.h(9): note: see declaration of 'Customer'
+     1>c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\airline.cpp(147): error C2248: 'AirCrew::AirCrew': cannot access protected member declared in class 'AirCrew'
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\aircrew.h(15): note: see declaration of 'AirCrew::AirCrew'
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\aircrew.h(8): note: see declaration of 'AirCrew'
+     1>c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\airline.cpp(290): error C2244: 'Airline::getIndex': unable to match function definition to an existing declaration
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\airline.cpp(273): note: see declaration of 'Airline::getIndex'
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\airline.cpp(290): note: definition
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\airline.cpp(290): note: 'int Airline::getIndex(T **,const T &,int) const'
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\airline.cpp(290): note: existing declarations
+         c:\users\yigal\desktop\c++ workplace\hw\part _2\afeka\part _2\airline\airline\airline.cpp(290): note: 'int Airline::getIndex(T *const *,const T &,int) const'
+         Generating Code...
+     1>Done Building Project "C:\Users\yigal\Desktop\C++ workPlace\HW\part _2\Afeka\part _2\Airline\Airline\Airline.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.92

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Army">
+      <UniqueIdentifier>{7cde6566-3409-4a54-aebb-3ba6f99d2d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MonStars">
+      <UniqueIdentifier>{b3f47ea0-438f-48d8-8acb-9c91af92e8e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MonStars">
+      <UniqueIdentifier>{dcfc744e-ecf8-44bd-a970-c123489988fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Army">
+      <UniqueIdentifier>{e2fa34ed-4044-41d8-b607-b597b6a09e07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Enums">
+      <UniqueIdentifier>{01cc29a4-ee22-4df2-a879-c430c2824f4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\War">
+      <UniqueIdentifier>{1ab54901-f96c-4f62-8a6f-9559819f7b36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\War">
+      <UniqueIdentifier>{f35ad16c-f07c-4df4-a4a5-a0b6146c3d64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Army.h">
+      <Filter>Header Files\Army</Filter>
+    </ClInclude>
+    <ClInclude Include="Soldier.h">
+      <Filter>Header Files\Army</Filter>
+    </ClInclude>
+    <ClInclude Include="Rifle.h">
+      <Filter>Header Files\Army</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot.h">
+      <Filter>Header Files\Army</Filter>
+    </ClInclude>
+    <ClInclude Include="Animal.h">
+      <Filter>Header Files\MonStars</Filter>
+    </ClInclude>
+    <ClInclude Include="DogZilla.h">
+      <Filter>Header Files\MonStars</Filter>
+    </ClInclude>
+    <ClInclude Include="MonStars.h">
+      <Filter>Header Files\MonStars</Filter>
+    </ClInclude>
+    <ClInclude Include="SiamAmurai.h">
+      <Filter>Header Files\MonStars</Filter>
+    </ClInclude>
+    <ClInclude Include="FighterAirCraft.h">
+      <Filter>Header Files\Army</Filter>
+    </ClInclude>
+    <ClInclude Include="Infantry.h">
+      <Filter>Header Files\Army</Filter>
+    </ClInclude>
+    <ClInclude Include="GodZilla.h">
+      <Filter>Header Files\MonStars</Filter>
+    </ClInclude>
+    <ClInclude Include="AmmunitionType.h">
+      <Filter>Header Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthState.h">
+      <Filter>Header Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="War.h">
+      <Filter>Header Files\War</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Animal.cpp">
+      <Filter>Source Files\MonStars</Filter>
+    </ClCompile>
+    <ClCompile Include="Soldier.cpp">
+      <Filter>Source Files\Army</Filter>
+    </ClCompile>
+    <ClCompile Include="Army.cpp">
+      <Filter>Source Files\Army</Filter>
+    </ClCompile>
+    <ClCompile Include="MonStars.cpp">
+      <Filter>Source Files\MonStars</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot.cpp">
+      <Filter>Source Files\Army</Filter>
+    </ClCompile>
+    <ClCompile Include="Infantry.cpp">
+      <Filter>Source Files\Army</Filter>
+    </ClCompile>
+    <ClCompile Include="DogZilla.cpp">
+      <Filter>Source Files\MonStars</Filter>
+    </ClCompile>
+    <ClCompile Include="GodZilla.cpp">
+      <Filter>Source Files\MonStars</Filter>
+    </ClCompile>
+    <ClCompile Include="SiamAmurai.cpp">
+      <Filter>Source Files\MonStars</Filter>
+    </ClCompile>
+    <ClCompile Include="Rifle.cpp">
+      <Filter>Source Files\Army</Filter>
+    </ClCompile>
+    <ClCompile Include="FighterAirCraft.cpp">
+      <Filter>Source Files\Army</Filter>
+    </ClCompile>
+    <ClCompile Include="War.cpp">
+      <Filter>Source Files\War</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Remark.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
