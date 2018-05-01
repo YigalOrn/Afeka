@@ -1,0 +1,3 @@
+Jul 18, 2015 8:40:06 PM-->INFO:Fuel task Started for Car111 Fueling Time 5800.0:)
+Jul 18, 2015 8:40:59 PM-->INFO:Fuel task Endded in: 1855.0 for Car111:)
+Jul 18, 2015 8:40:59 PM-->INFO:Fuel task Started for Car666 Fueling Time 290.0:)

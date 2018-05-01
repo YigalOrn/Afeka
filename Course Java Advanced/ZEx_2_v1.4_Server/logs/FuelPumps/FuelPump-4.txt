@@ -1,0 +1,2 @@
+Jul 18, 2015 8:40:38 PM-->INFO:Fuel task Started for Car1010 Fueling Time 295.0:)
+Jul 18, 2015 8:41:00 PM-->INFO:Fuel task Endded in: 290.0 for Car1010:)

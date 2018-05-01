@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GasStation numOfPumps="6" pricePerLiter="7.82">
+	
+        <MainFuelPool maxCapacity="5000" currentCapacity="2000" />
+       
+        <CleaningService numOfTeams="3" price="40" secondsPerAutoClean="2" />
+	
+        <Cars>
+		<Car id="111" wantCleaning="true">
+			<WantsFuel numOfLiters="100" pumpNum="3" />
+		</Car>
+		
+                <Car id="333">
+			<WantsFuel numOfLiters="42" pumpNum="1" />
+		</Car>
+
+		<Car id="222" wantCleaning="true" />
+		
+                <Car id="444" wantCleaning="true">
+			<WantsFuel numOfLiters="35" pumpNum="1" />
+		</Car>
+	
+
+<Car id="555" wantCleaning="true">
+			<WantsFuel numOfLiters="120" pumpNum="3" />
+		</Car>
+
+<Car id="666" wantCleaning="true">
+			<WantsFuel numOfLiters="5" pumpNum="3" />
+		</Car>
+
+<Car id="777" wantCleaning="true" />
+
+<Car id="888" wantCleaning="true" />
+
+<Car id="999" wantCleaning="true" />
+
+<Car id="1000" wantCleaning="true">
+			<WantsFuel numOfLiters="98.5" pumpNum="2" />
+		</Car>
+
+<Car id="1001">
+			<WantsFuel numOfLiters="5" pumpNum="1" />
+		</Car>
+		
+		<Car id="1002">
+			<WantsFuel numOfLiters="12" pumpNum="0" />
+		</Car>
+
+
+
+<Car id="1003" wantCleaning="true">
+			<WantsFuel numOfLiters="5" pumpNum="5" />
+		</Car>
+		
+		<Car id="1004" wantCleaning="true">
+			<WantsFuel numOfLiters="5.758" pumpNum="0" />
+		</Car>
+		
+		<Car id="1005" wantCleaning="true">
+			<WantsFuel numOfLiters="1.3" pumpNum="1" />
+		</Car>
+
+
+
+
+
+
+<Car id="1006" wantCleaning="true">
+			<WantsFuel numOfLiters="500" pumpNum="3" />
+		</Car>
+		
+		<Car id="1007" wantCleaning="true">
+			<WantsFuel numOfLiters="0.007" pumpNum="0" />
+		</Car>
+		
+		<Car id="1008" wantCleaning="true">
+			<WantsFuel numOfLiters="5" pumpNum="3" />
+		</Car>
+
+
+<Car id="9000" wantCleaning="true" />
+
+<Car id="1009" wantCleaning="true">
+			<WantsFuel numOfLiters="5" pumpNum="3" />
+		</Car>
+		
+		<Car id="1010" wantCleaning="true">
+			<WantsFuel numOfLiters="5" pumpNum="4" />
+		</Car>
+		
+		<Car id="1011" wantCleaning="true">
+			<WantsFuel numOfLiters="5" pumpNum="3" />
+		</Car>
+
+
+
+
+
+
+<Car id="1012" wantCleaning="true" />
+
+<Car id="1013" wantCleaning="true" />
+
+<Car id="1014" wantCleaning="true" />
+
+
+<Car id="1015" wantCleaning="true" />
+
+<Car id="1016" wantCleaning="true" />
+
+<Car id="1017" wantCleaning="true" />
+
+
+
+<Car id="444125" wantCleaning="true">
+			<WantsFuel numOfLiters="150" pumpNum="2" />
+		</Car>
+
+
+<Car id="1018" wantCleaning="true" />
+
+<Car id="1019" wantCleaning="true" />
+
+<Car id="1020" wantCleaning="true" />
+
+
+<Car id="1021" wantCleaning="true" />
+
+
+<Car id="444135" wantCleaning="true">
+			<WantsFuel numOfLiters="15" pumpNum="0" />
+		</Car>
+
+<Car id="1022" wantCleaning="true" />
+
+<Car id="1023" wantCleaning="true" />
+
+
+
+
+<Car id="1" wantCleaning="true">
+			<WantsFuel numOfLiters="15" pumpNum="0" />
+		</Car>
+
+<Car id="2" wantCleaning="true" />
+
+<Car id="3" wantCleaning="true" />
+
+
+<Car id="4" wantCleaning="true">
+			<WantsFuel numOfLiters="225.89" pumpNum="0" />
+		</Car>
+
+<Car id="5" wantCleaning="true" />
+
+<Car id="6" wantCleaning="true" />
+
+
+
+
+
+        </Cars>
+
+</GasStation>
