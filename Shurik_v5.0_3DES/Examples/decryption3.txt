@@ -1,0 +1,126 @@
+tutorialspoint
+ Jobs
+  Qries (Q/A)
+Whiteboard  Whiteboard
+  Net Meeting
+Tools
+  Articles
+Facebook
+ 
+Google+
+ 
+Twitter
+ 
+Linkedin
+ 
+YouTube
+ HOME TUTORIALS LIBRARY  CODING GROUND  TUTOR CONNECT VIDEOS
+ Search
+ Perl Tutorial
+Perl Basics
+Perl - Home
+Perl - Introduction
+Perl - Environment
+Perl - Syntax Overview
+Perl - Data Types
+Perl - Variables
+Perl - Scalars
+Perl - Arrays
+Perl - Hashes
+Perl - IF...ELSE
+Perl - Loops
+Perl - Operators
+Perl - Date & Time
+Perl - Subroutines
+Perl - References
+Perl - Formats
+Perl - File I/O
+Perl - Directories
+Perl - Error Handling
+Perl - Special Variables
+Perl - Coding Standard
+Perl - Regular Expressions
+Perl - Sending Email
+Perl Advanced
+Perl - Socket Programming
+Perl - Object Oriented
+Perl - Database Access
+Perl - CGI Programming
+Perl - Packages & Modules
+Perl - Process Management
+Perl - Embedded Documentation
+Perl - Functions References
+Perl Useful Resources
+Perl - Questions and Answers
+Perl - Quick Guide
+Perl - Useful Resources
+Perl - Discussion
+Selected Reading
+Developer's Best Practices
+Questions and Answers
+Effective Resume Writing
+HR Interview Questions
+Computer Glossary
+Who is Who
+Perl Conditional Statements - IF...ELSE
+Advertisements
+ Previous Page Next Page  
+Perl conditional statements helps in the decision making, which require that the programmer specifies one or more conditions to be evaluated or tested by the program, along with a statement or statements to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.
+
+Following is the general from of a typical decision making structure found in most of the programming languages −
+
+Decision making statements in Perl
+The number 0, the strings '0' and "" , the empty list () , and undef are all false in a boolean context and all other values are true. Negation of a true value by ! or not returns a special false value.
+
+Perl programming language provides the following types of conditional statements.
+
+Sr.No.	Statement & Description
+1	if statement
+An if statement consists of a boolean expression followed by one or more statements.
+
+2	if...else statement
+An if statement can be followed by an optional else statement.
+
+3	if...elsif...else statement
+An if statement can be followed by an optional elsif statement and then by an optional else statement.
+
+4	unless statement
+An unless statement consists of a boolean expression followed by one or more statements.
+
+5	unless...else statement
+An unless statement can be followed by an optional else statement.
+
+6	unless...elsif..else statement
+An unless statement can be followed by an optional elsif statement and then by an optional else statement.
+
+7	switch statement
+With the latest versions of Perl, you can make use of the switch statement. which allows a simple way of comparing a variable value against various conditions.
+
+The ? : Operator
+Let's check the conditional operator ? :which can be used to replace if...else statements. It has the following general form −
+
+Exp1 ? Exp2 : Exp3;
+Where Exp1, Exp2, and Exp3 are expressions. Notice the use and placement of the colon.
+
+The value of a ? expression is determined like this: Exp1 is evaluated. If it is true, then Exp2 is evaluated and becomes the value of the entire ? expression. If Exp1 is false, then Exp3 is evaluated and its value becomes the value of the expression. Below is a simple example making use of this operator −
+
+#!/usr/local/bin/perl
+ 
+$name = "Ali";
+$age = 10;
+
+$status = ($age > 60 )? "A senior citizen" : "Not a senior citizen";
+
+print "$name is  - $status\n";
+This will produce the following result −
+
+Ali is - Not a senior citizen
+ Previous Page  Print Next Page  
+Advertisements
+ img  img  img  img  img  img
+ Tutorials Point
+Write for us FAQ's Helping Contact
+© Copyright 2017. All Rights Reserved.
+
+Enter email for newsletter
+  go

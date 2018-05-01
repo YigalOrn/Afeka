@@ -1,0 +1,19 @@
+Dear Student,
+This letter is top secret and that is why it is encrypted using DES.
+This letter is to encourage you to learn Linux OS and Perl.
+Although I love Python more then Perl, our beloved lecturer Dr L.Alex asked so.
+#DES-TEST#
+#DES-TEST#
+#DES-TEST#
+#DES-TEST#
+#DES-TEST#
+#DES-TEST#
+#DES-TEST#
+#DES-TEST#
+#DES-TEST#
+#DES-TEST#
+#DES-TEST#
+#DES-TEST#
+#DES-TEST#
+Perl+Bash, DES+RSA.
+Great Project :) WOW Orin and Adam
