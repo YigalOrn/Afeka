@@ -1,0 +1,40 @@
+﻿Build started 16-Sep-15 11:44:02.
+     1>Project "C:\Users\Y-PC\Desktop\C++ workPlace\My Topics\Nested class\ConsoleApplication1\ConsoleApplication1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(36): error C2327: 'Enclose1::enclose1_x': is not a type name, static, or enumerator
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(36): error C2065: 'enclose1_x': undeclared identifier
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(37): error C2327: 'Enclose1::enclose1_d': is not a type name, static, or enumerator
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(37): error C2065: 'enclose1_d': undeclared identifier
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(40): error C2352: 'Enclose1::e1_1': illegal call of non-static member function
+         c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(18): note: see declaration of 'Enclose1::e1_1'
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(46): error C2327: 'Enclose1::enclose1_x': is not a type name, static, or enumerator
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(46): error C2065: 'enclose1_x': undeclared identifier
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(55): error C2065: 'inner1_x': undeclared identifier
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(56): error C2597: illegal reference to non-static member 'Enclose1::Inner1::inner1_x'
+         c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(56): note: see declaration of 'Enclose1::Inner1::inner1_x'
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(57): error C2352: 'Enclose1::Inner1::foo1': illegal call of non-static member function
+         c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(30): note: see declaration of 'Enclose1::Inner1::foo1'
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(59): error C3861: 'foo4': identifier not found
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(83): error C2988: unrecognizable template declaration/definition
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(83): error C2143: syntax error: missing ';' before '<'
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(83): error C2059: syntax error: '<'
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(84): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(84): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(135): error C2182: 'Inner5<`template-type-parameter-1'>': illegal use of type 'void'
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(135): error C2936: 'Enclose5::Inner5<T>': template-id redefined as a global data variable
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(135): error C2350: 'Enclose5::Inner5<T>' is not a static member
+         c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(135): note: see declaration of 'Enclose5::Inner5<T>'
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(135): error C2061: syntax error: identifier 'gooGoo1'
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(165): error C2988: unrecognizable template declaration/definition
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(165): error C2143: syntax error: missing ';' before '<'
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(165): error C2182: 'Enclose6': illegal use of type 'void'
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(165): error C2059: syntax error: '<'
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(172): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\y-pc\desktop\c++ workplace\my topics\nested class\consoleapplication1\source.cpp(172): error C2447: '{': missing function header (old-style formal list?)
+     1>Done Building Project "C:\Users\Y-PC\Desktop\C++ workPlace\My Topics\Nested class\ConsoleApplication1\ConsoleApplication1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.39

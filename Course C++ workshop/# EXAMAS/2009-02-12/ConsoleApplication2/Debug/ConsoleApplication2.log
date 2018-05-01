@@ -1,0 +1,14 @@
+﻿Build started 10-Sep-15 13:13:45.
+     1>Project "C:\Users\Y-PC\Desktop\C++ workPlace\# EXAMAS\2009-02-12\ConsoleApplication2\ConsoleApplication2.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\y-pc\desktop\c++ workplace\# examas\2009-02-12\consoleapplication2\source.cpp(40): error C2679: binary '=': no operator found which takes a right-hand operand of type 'A<int>' (or there is no acceptable conversion)
+         c:\users\y-pc\desktop\c++ workplace\# examas\2009-02-12\consoleapplication2\source.cpp(24): note: could be 'Son<int> &Son<int>::operator =(Son<int> &&)'
+         c:\users\y-pc\desktop\c++ workplace\# examas\2009-02-12\consoleapplication2\source.cpp(24): note: or       'Son<int> &Son<int>::operator =(const Son<int> &)'
+         c:\users\y-pc\desktop\c++ workplace\# examas\2009-02-12\consoleapplication2\source.cpp(40): note: while trying to match the argument list '(Son<int>, A<int>)'
+     1>Done Building Project "C:\Users\Y-PC\Desktop\C++ workPlace\# EXAMAS\2009-02-12\ConsoleApplication2\ConsoleApplication2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.67

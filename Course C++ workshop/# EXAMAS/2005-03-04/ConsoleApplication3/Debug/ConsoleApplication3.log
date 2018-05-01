@@ -1,0 +1,13 @@
+﻿Build started 23-Sep-15 21:12:41.
+     1>Project "C:\Users\Y-PC\Desktop\C++ workPlace\# EXAMAS\2005-03-04\ConsoleApplication3\ConsoleApplication3.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ConsoleApplication3.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\y-pc\desktop\c++ workplace\# examas\2005-03-04\consoleapplication3\source.cpp(133): error C2783: 'void print(S,S)': could not deduce template argument for 'S'
+         c:\users\y-pc\desktop\c++ workplace\# examas\2005-03-04\consoleapplication3\source.cpp(124): note: see declaration of 'print'
+     1>Done Building Project "C:\Users\Y-PC\Desktop\C++ workPlace\# EXAMAS\2005-03-04\ConsoleApplication3\ConsoleApplication3.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.18

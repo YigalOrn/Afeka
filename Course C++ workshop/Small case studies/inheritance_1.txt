@@ -1,0 +1,63 @@
+#include<iostream>
+#include <typeinfo>
+using namespace std;
+
+class A
+{
+	char* str;
+
+public:
+	explicit A(int x) { str = "rrr"; }//override def
+	virtual ~A() { cout << "In A::~A()" << endl; delete[] str; }//override def
+};
+
+class B : virtual public A
+{
+	double d1;
+
+public:
+	B(int x) : A(5) {}
+	virtual ~B() {}
+};
+
+class C : virtual public A
+{
+public:
+	C(int x) : A(5) {}
+};
+
+class D : public B, public C
+{
+public:
+	D(int x) : A(5), B(5), C(5) {}
+};
+
+class E : public B
+{
+public:
+	E(int x) : A(5), B(5) {}
+};
+
+class F : public E
+{
+public:
+	F() : A(5), E(5) {}//notice that F should call A also!!!!!
+};
+
+
+int main(void)
+{
+	//A* a = new A{ 5 };
+	//a->~A();
+	
+	//A a = A{ 5 };//not copy initialization
+	//a.~A();//will be called twice!!!
+
+	//A* e1 = new E{5};//__vptr case study
+	//B* e2 = new E{ 5 };//__vptr case study
+
+	E* f1 = new F{};
+
+	return 0;
+}//main
+

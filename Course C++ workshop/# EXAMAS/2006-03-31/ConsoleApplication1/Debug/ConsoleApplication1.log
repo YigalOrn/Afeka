@@ -1,0 +1,13 @@
+﻿Build started 21-Sep-15 02:17:51.
+     1>Project "C:\Users\Y-PC\Desktop\C++ workPlace\# EXAMAS\2006-03-31\ConsoleApplication1\ConsoleApplication1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\y-pc\desktop\c++ workplace\# examas\2006-03-31\consoleapplication1\source.cpp(83): error C2664: 'B::B(const B &)': cannot convert argument 1 from 'int' to 'const B &'
+         c:\users\y-pc\desktop\c++ workplace\# examas\2006-03-31\consoleapplication1\source.cpp(83): note: Reason: cannot convert from 'int' to 'const B'
+         c:\users\y-pc\desktop\c++ workplace\# examas\2006-03-31\consoleapplication1\source.cpp(83): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+     1>Done Building Project "C:\Users\Y-PC\Desktop\C++ workPlace\# EXAMAS\2006-03-31\ConsoleApplication1\ConsoleApplication1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.37

@@ -1,0 +1,35 @@
+//from one of the exams...
+
+#include<iostream>
+#include <typeinfo>
+using namespace std;
+
+class A
+{
+
+public:
+	void operator=(const A& other)
+	{
+		cout << "In A::operator=" << endl;
+	}
+};
+
+class B :public A
+{
+};
+
+int main(void)
+{
+	A a1, a2;
+	a1.operator=(a2);
+	a1 = a2;
+
+	B b1, b2;
+
+	//b1.operator=(b2);//class B method of compiler given (present) operator= is called first which in turn call class A (base class) overloaded operator= method!
+
+	//b1.operator=(a1);//compilation error
+
+	return 0;
+}//main
+

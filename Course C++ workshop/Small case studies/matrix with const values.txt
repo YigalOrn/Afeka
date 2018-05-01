@@ -1,0 +1,64 @@
+#include<iostream>
+using namespace std;
+
+class A
+{
+	char *arr[10];
+public:
+	A()
+	{
+		for (int i = 0; i < 10; i++)
+		{
+			arr[i] = 0;
+		}
+	}
+	char*const* foo1()const
+	{
+		return arr;
+	}
+	char** foo2()
+	{
+		return arr;
+	}
+	void show() const
+	{
+		for (int i = 0; i < 10; i++)
+		{
+			if (arr[i])
+			{
+				cout << arr[i] << endl;
+			}
+		}
+	}
+};
+
+
+
+void main()
+{
+	A a;
+	char* temp[50] = { 0 };
+	char** arr2 = a.foo2();
+	arr2[1] = "aaaa";
+	arr2[9] = "zzzzzzz";
+	a.show();
+	const char*const* arr1 = a.foo1();
+	arr1 = temp;
+	//arr1[1] = "aaaa";
+	//arr1[9] = "zzzzzzz";
+	a.show();
+
+	void foo3(char*[], int);
+	char* temp2[4] = {"a", "bb", "ccc", "dddd"};
+	foo3(temp2, 4);
+
+}//main
+
+
+void foo3(char* arr[], int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		cout << arr[i] << endl;
+	}
+}

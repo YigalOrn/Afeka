@@ -1,0 +1,50 @@
+#include<iostream>
+#include <typeinfo>
+using namespace std;
+
+class A
+{
+public:
+	//A() {}//def overloaded
+	//A(const A* aPtr) {}//def taken!
+
+	//virtual ~A() {}
+	//virtual void foo() { cout << "A::foo" << endl; }
+};
+
+class B :public A
+{
+public:
+	//virtual void foo() { cout << "B::foo" << endl; }
+	void goo() { cout << "B::goo" << endl; }
+};
+
+int main(void)
+{
+	//A-base class, B-derived class
+
+	//A a = new A{};//needs conversion
+	//A a = A{};//correct syntax
+
+	A a1 = B{};
+	A* a2 = new B{};
+	A* a3 = new A{};
+
+	//cout << typeid(a1).name() << endl;
+	//cout << typeid(*a2).name() << endl;
+
+	//a1.foo();
+	//a2->foo();
+
+	try
+	{
+		((B*)a3)->goo();//compilation error only if private modifier for goo()
+	}
+	catch(...)
+	{
+		cout << "catch any" << endl;
+	}
+
+	return 0;
+}//main
+

@@ -1,0 +1,14 @@
+http://www.cplusplus.com/reference/ctime/
+
+
+http://www.tutorialspoint.com/c_standard_library/c_function_localtime.htm
+
+
+
+http://pubs.opengroup.org/onlinepubs/007908775/xsh/time.h.html
+
+
+http://en.cppreference.com/w/c/chrono/asctime
+
+http://www.tutorialspoint.com/c_standard_library/c_function_time.htm
+
