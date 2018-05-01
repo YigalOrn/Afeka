@@ -1,0 +1,154 @@
+#include <p32xxxx.h>
+#pragma config FPLLMUL = MUL_20, FPLLIDIV = DIV_2, FPLLODIV = DIV_1, FWDTEN = OFF
+#pragma config POSCMOD = HS, FNOSC = PRIPLL, FPBDIV = DIV_8
+
+
+long z, delay_speed = 640000;
+enum BOOL{ False, True };
+
+
+void reset_led_display_operation()
+{
+	TRISE = 0;
+	PORTF = 4;
+	PORTE = 0;
+	PORTDbits.RD4 = 1;
+	PORTDbits.RD4 = 0;
+}
+
+void counter_operation()
+{
+	static int counter = 0;
+	counter++;
+	TRISE = 0;
+	PORTF = 4;
+	PORTE = counter;
+	PORTDbits.RD4 = 1;
+	PORTDbits.RD4 = 0;
+	for (z = 0; z < delay_speed; z++);
+}
+
+void shift_operation()
+{
+	static int y = 1;
+	TRISE = 0;
+	PORTF = 4;
+	PORTE = y;
+	PORTDbits.RD4 = 1;
+	PORTDbits.RD4 = 0;
+	for (z = 0; z < delay_speed; z++);
+
+	if (y < 128)
+		y <<= 1;
+	else
+		y = 1;
+
+}
+
+void menifa_operation()
+{
+	static int lefty = 16, righty = 8;
+	TRISE = 0;
+	PORTF = 4;
+	PORTE = (lefty | righty);
+	PORTDbits.RD4 = 1;
+	PORTDbits.RD4 = 0;
+	for (z = 0; z < delay_speed; z++);
+
+	if (righty>0)
+	{
+		lefty <<= 1;
+		righty >>= 1;
+	}
+	else
+	{
+		lefty = 16;
+		righty = 8;
+	}
+}
+
+void main(void)
+{
+	int is_stop;
+	int x;
+	TRISF = 0;
+	TRISD = 0;
+
+	//--------------------------
+	//Beeper
+	for (z = 0; z < 64000; z++)
+	{
+		TRISG = 0;
+		PORTG = 1 << 15;
+		PORTDbits.RD4 = 1;
+		PORTDbits.RD4 = 0;
+		for (z = 0; z < 64000; z++);
+		PORTG = 0;
+		PORTDbits.RD4 = 1;
+		PORTDbits.RD4 = 0;
+	}
+	//--------------------------
+
+
+	while (1)
+	{
+		TRISE = 0xff;
+		PORTF = 3;
+		PORTDbits.RD4 = 1;
+		PORTDbits.RD4 = 0;
+		x = PORTE;
+
+		if (x & 32)
+		{
+			is_stop = False;
+		}
+		else
+		{
+			is_stop = True;
+		}
+
+		if (is_stop)
+		{
+			if (x & 4)//menifa
+			{
+				menifa_operation();
+			}
+			else if (x & 2)//shift
+			{
+				shift_operation();
+			}
+			else if (x & 1)//counter
+			{
+				counter_operation();
+			}
+			else//explicitly do nothing
+			{
+				reset_led_display_operation();
+			}
+		}
+
+		if (x & 8)
+		{
+
+		}
+		else
+		{
+		}
+
+		if (x & 16)
+		{
+			delay_speed = 340000;
+		}
+		else
+		{
+			delay_speed = 640000;
+		}
+
+		if (x & 128)
+		{
+			break;
+		}
+
+
+	}//while
+}//main

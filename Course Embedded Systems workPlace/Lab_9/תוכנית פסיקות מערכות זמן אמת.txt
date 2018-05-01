@@ -1,0 +1,97 @@
+
+ // file:timer12_int012_interrupt.c//?????? ????? ?????? ??????? ????????
+	#include <plib.h>
+	#include "p32xxxx.h"
+#pragma config FPLLMUL = MUL_20, FPLLIDIV = DIV_2, FPLLODIV = DIV_1, FWDTEN = OFF
+#pragma config POSCMOD = HS, FNOSC = PRIPLL, FPBDIV = DIV_8
+
+void __ISR(_EXTERNAL_2_IRQ,ipl6)INT2_interrupt(void) //_EXTERNAL_2_IRQ
+ {
+PORTEbits.RE4^=1;
+	_RD4=1;	
+	_RD4=0;
+     IFS0bits.INT2IF=0; 
+       }    
+ 
+void __ISR(_EXTERNAL_1_IRQ,ipl1)INT1_interrupt(void) //_EXTERNAL_1_IRQ
+ {
+PORTEbits.RE3^=1;
+	_RD4=1;	
+	_RD4=0;
+     IFS0bits.INT1IF=0; 
+       }  
+void __ISR(_EXTERNAL_0_IRQ,ipl6)INT0_interrupt(void) //_EXTERNAL_0_IRQ
+ {
+PORTEbits.RE2^=1;
+	_RD4=1;	
+	_RD4=0;
+     IFS0bits.INT0IF=0; 
+       }       
+
+void __ISR(_TIMER_1_VECTOR, ipl2)  timer1_interrupt(void)
+      {
+PORTEbits.RE0^=1;
+	_RD4=1;	
+	_RD4=0;
+IFS0bits.T1IF=0; 
+       }
+
+void __ISR(_TIMER_2_VECTOR, ipl1) timer2_interrupt(void)     
+ {
+PORTEbits.RE1^=1;
+	_RD4=1;	
+	_RD4=0;
+IFS0bits.T2IF=0; 
+       }
+
+int main (void)
+	  {int x;
+       TRISF&=0x40;//int0-RF6
+       TRISD=0;
+       TRISE&=0x300;//int12-RE8/9
+       PORTF=4; 
+//-------int0
+      IPC0=0x04000000;//??????
+      IEC0bits.INT0IE=1;  
+      INTCONbits.INT0EP=0;
+      IFS0bits.INT0IF=0;
+//--------int1
+      IPC1=0x04000004;//??????(int1+timer1)
+      IEC0bits.INT1IE=1;  
+      IFS0bits.INT1IF=0; 
+      INTCONbits.INT1EP=0;
+//--------int2
+      IPC2=0x04000004;//??????(int2+timer2)
+      IEC0bits.INT2IE=1;  
+      IFS0bits.INT2IF=0; 
+      INTCONbits.INT2EP=1;
+//------timer12
+      T1CONbits.ON=0;
+      T2CONbits.ON=0;
+      T1CONbits.TGATE=0;
+T1CONbits.TCS=0;
+T1CONbits.TCKPS0=1;
+T1CONbits.TCKPS1=1;
+T1CONbits.TSYNC=1;
+TMR1=0;
+PR1=0X1200;
+IFS0bits.T1IF=0;
+//IPC1=4;//??????
+IEC0bits.T1IE=1;
+//------timer2
+T2CONbits.TGATE=0;
+T2CONbits.TCS=0;
+T2CONbits.TCKPS0=1;
+T2CONbits.TCKPS1=1;
+T2CONbits.TCKPS2=1;
+TMR2=0;
+PR2=0X1500;
+IEC0bits.T2IE=1;
+IFS0bits.T2IF=0;
+INTCONbits.MVEC=1;//????? ??????
+IPTMR=0;//INTERRUPT PROXIMITY TIMER REGISTER
+T1CONbits.ON=1;
+T2CONbits.ON=1;
+  asm("ei");//?????? ????
+while(1);  
+}

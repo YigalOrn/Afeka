@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Labs">
+      <UniqueIdentifier>{c92a867a-c040-47ef-89bf-13b4390484b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\Lab_2">
+      <UniqueIdentifier>{d60b410a-4b78-4c38-9ead-f56bc4c5eb14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\Lab_3">
+      <UniqueIdentifier>{448a2a97-7c6a-4222-889f-eba9452cb520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\Lab_2\Ex">
+      <UniqueIdentifier>{98fdac7e-22a1-4b46-a234-eda72eaad022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\Lab_3\Ex">
+      <UniqueIdentifier>{b17b4389-06eb-419a-bc19-fee3508150de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\Lab_4">
+      <UniqueIdentifier>{882e0e9d-6d3b-4dd4-b945-535792677071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\Lab_4\Ex">
+      <UniqueIdentifier>{85736f4f-eebe-443e-972e-1f0df1280242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\Lab_3\Web_Examples">
+      <UniqueIdentifier>{22492a37-d646-43d2-83a8-27c8a876f4aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\Lab_5">
+      <UniqueIdentifier>{78da7278-dcf0-43fe-ae11-a11e38aa7185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\Lab_5\Ex">
+      <UniqueIdentifier>{90e35fcd-c3c8-4995-8c55-38280bd9bbce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Temp">
+      <UniqueIdentifier>{4521e8d1-121f-4c5a-887e-dbab3a46dc73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\Lab_6">
+      <UniqueIdentifier>{30e59e7b-3dc5-4121-a273-97692f765b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\Lab_6\Ex">
+      <UniqueIdentifier>{2f20680f-b9a3-4c27-89f5-01c70b90db18}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lab_3_3.cpp">
+      <Filter>Source Files\Labs\Lab_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_3_2.cpp">
+      <Filter>Source Files\Labs\Lab_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_3_1.cpp">
+      <Filter>Source Files\Labs\Lab_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_2_1.cpp">
+      <Filter>Source Files\Labs\Lab_2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_2_2.cpp">
+      <Filter>Source Files\Labs\Lab_2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_2_3.cpp">
+      <Filter>Source Files\Labs\Lab_2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_2_4.cpp">
+      <Filter>Source Files\Labs\Lab_2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_Ex_1_v2.cpp">
+      <Filter>Source Files\Labs\Lab_2\Ex</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_Ex_1_v1.cpp">
+      <Filter>Source Files\Labs\Lab_2\Ex</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_Ex_2_v2.cpp">
+      <Filter>Source Files\Labs\Lab_3\Ex</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_Ex_2_v1.cpp">
+      <Filter>Source Files\Labs\Lab_3\Ex</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_4_1.cpp">
+      <Filter>Source Files\Labs\Lab_4</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_Ex_4_part_a.cpp">
+      <Filter>Source Files\Labs\Lab_4\Ex</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_Ex_4_part_b.cpp">
+      <Filter>Source Files\Labs\Lab_4\Ex</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_4_2.cpp">
+      <Filter>Source Files\Labs\Lab_4</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_4_3.cpp">
+      <Filter>Source Files\Labs\Lab_4</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_Ex_3_v1.cpp">
+      <Filter>Source Files\Labs\Lab_3\Ex</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_Ex_3_v2.cpp">
+      <Filter>Source Files\Labs\Lab_3\Ex</Filter>
+    </ClCompile>
+    <ClCompile Include="Web_Example_1.cpp">
+      <Filter>Source Files\Labs\Lab_3\Web_Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="Web_Example_2.cpp">
+      <Filter>Source Files\Labs\Lab_3\Web_Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="Cyclic_Line.cpp">
+      <Filter>Source Files\Labs\Lab_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_5_1.cpp">
+      <Filter>Source Files\Labs\Lab_5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_5_2.cpp">
+      <Filter>Source Files\Labs\Lab_5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_5_3.cpp">
+      <Filter>Source Files\Labs\Lab_5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_5_4.cpp">
+      <Filter>Source Files\Labs\Lab_5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_Ex_5.cpp">
+      <Filter>Source Files\Labs\Lab_5\Ex</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_5_5.cpp">
+      <Filter>Source Files\Labs\Lab_5</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawEnvelopo.cpp">
+      <Filter>Source Files\Labs\Lab_5</Filter>
+    </ClCompile>
+    <ClCompile Include="TempSource.cpp">
+      <Filter>Source Files\Temp</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_6_1.cpp">
+      <Filter>Source Files\Labs\Lab_6</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_6_2.cpp">
+      <Filter>Source Files\Labs\Lab_6</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_Ex_6_v2.cpp">
+      <Filter>Source Files\Labs\Lab_6\Ex</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_Ex_6_v1.cpp">
+      <Filter>Source Files\Labs\Lab_6\Ex</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
