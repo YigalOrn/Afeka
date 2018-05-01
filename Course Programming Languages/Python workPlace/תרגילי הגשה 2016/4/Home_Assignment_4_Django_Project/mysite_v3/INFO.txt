@@ -1,0 +1,18 @@
+Please notice all my work was done using:
+Python v3.5.2 (3.4 will work with upgraded Django!)
+Django 1.10.1
+
+*This project will not run on Afeka's computers unless you upgrade the Django version:
+1)You already know that you need to uninstall the 2.7 version.
+2)Using the cmd cd to the python 3.x install  folder cd to Scripts inside it.
+3)Write the following command to cmd : pip install --upgrade Django
+----------------------------------------------------------------
+http://127.0.0.1:8000/admin
+
+Admin : Yigal
+password : afekaafeka
+
+*All users have the password : afekaafeka
+----------------------------------------------------------------
+
+http://127.0.0.1:8000/ChitChat/

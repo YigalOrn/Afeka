@@ -1,0 +1,34 @@
+
+/*
+hyper links
+*/
+li {
+color: white;
+}
+
+li a {
+color: Chartreuse ;
+}
+
+/*
+for the circles before the username in index
+*/
+ul {
+ color: white;
+}
+
+body {
+background: url("images/bg_1.jpg") ;
+}
+
+p {
+color: white;
+}
+
+h1 {
+color: white;
+}
+
+table {
+color: white;
+}

@@ -1,0 +1,7 @@
+Admin:
+Yigal
+afekaafeka
+
+All users have the password: afekaafeka
+
+http://127.0.0.1:8000/ChitChat/

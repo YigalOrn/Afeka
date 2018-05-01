@@ -1,0 +1,37 @@
+{% extends "ChitChat\base.html" %}
+
+{% block title %} {{ block.super }} correspondence Page {% endblock %}
+
+{% block content %}
+
+<div align="center">
+    {% if messagesLst %}
+    {% for message in messagesLst %}
+    <div style="color:white;padding:20px;">
+        <h4>sender: {{message.sender.username}}</h4>
+        <h4>recipient: {{message.recipient.username}}</h4>
+        <h4>date: {{message.pub_date}}</h4>
+        <h4>message: </h4>
+        <p>{{ message.message }}</p>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    <form action="{% url 'newMessage' redirect_user.pk %}" method="post" style="color:white;">
+        {% csrf_token %}
+        <textarea name="correspondence_textarea_form" rows="10" cols="100" name="comment" style="font-size:110%;">
+Enter a new message for [{{ redirect_user.username }}] here...</textarea><br/>
+        <input type="submit" style="font-size:100%;">
+    </form>
+
+    <br/>
+    <a href="{% url 'index' %}">
+        <button type="button" style="font-size:100%;">back to main/index page</button>
+    </a>
+</div>
+{% endblock %}
+
+
+
+
+

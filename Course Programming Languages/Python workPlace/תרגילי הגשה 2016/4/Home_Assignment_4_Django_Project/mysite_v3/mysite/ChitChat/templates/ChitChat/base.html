@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'ChitChat/ChitChatStyle.css' %}"/>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %} ChitChat App {% endblock %}
+    </title>
+</head>
+
+<body>
+
+<div id="header">
+    {% block header %}
+
+    {% endblock %}
+</div>
+
+<div id="content">
+    {% block content %}
+
+    {% endblock %}
+</div>
+
+<div id="footer">
+    {% block footer %}
+    <a href="{% url 'logout' %}">
+        <button type="button" style="font-size:100%;">log out</button>
+    </a>
+    {% endblock %}
+</div>
+
+</body>
+</html>

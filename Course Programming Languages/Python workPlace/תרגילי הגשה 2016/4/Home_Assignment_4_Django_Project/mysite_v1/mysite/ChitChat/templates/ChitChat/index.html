@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+
+<ul>
+{% if userLst %}
+{% for user in userLst %}
+<li><a href="{% url 'correspondence' user.pk %}">{{ user.username }}</a></li>
+{% endfor %}
+{% endif %}
+</ul>
+
+<p>click to <a href="{% url 'logout' %}">log out</a></p>
+
+</body>
+</html>
