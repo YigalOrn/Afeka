@@ -1,0 +1,6 @@
+second level caching:
+
+Each entity manager will have its own first level caching 
+where he will manage his persisted objects during his life time,
+each such entity manager will then use the one and only second level caching 
+to sync with all others.

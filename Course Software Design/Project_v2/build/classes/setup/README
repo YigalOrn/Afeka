@@ -1,0 +1,47 @@
+Setup1:
+
+Creates:
+
+- 2 fictive Investor:
+	username: Admin1
+	password: admin
+	
+	username: Admin2
+	password: admin
+
+- 1 fictive FinancialManager:
+	username: Admin
+	password: admin
+
+- 3 fictive Lead
+
+
+The only purpose of this fictive instances are to show that the system works according to the
+document i.e. fulfills its functionality.
+We create this instances by directly/"manually" inserting them into the underlying DB. 	
+
+
+Setup2:
+
+Because we don't deal/manage Investor accounts in the current version but, still obligated to
+some rational app logic and proof of concept to say the least we the following:
+- we do not allow Investors to ASK on what they don't have, tracking this changes 
+  using some POJO data structures and persistency.
+- So again, for demonstration purposes we use Eyal's stock exchange client to issue some ASK commands
+  to startup the simulation process i.e. the stock trading process. 
+
+
+The above parts are not combined to one class to far debug and the test the system in other cases...
+
+
+
+
+
+
+
+
+
+
+
+ 
+
