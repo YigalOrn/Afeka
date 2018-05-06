@@ -1,0 +1,42 @@
+# Title:Angle, From:Degree, To:Radian
+# Degree=50, Radian=0.8726646259971647
+0, 0, 2, 50
+# Title:Angle, From:Degree, To:Gradian
+# Degree=1.23, Radian=1.366666666666667
+0, 0, 1, 1.23
+# Title:Weight/Mass, From:Gram, To:Tonne
+# Gram=14.0, Tonne=0.000014
+10, 4, 13, 14.0
+# Title:Angle, From:Radian, To:Degree
+# Radian=3.999999999999999, Degree=229.1831180523292
+0, 2, 0, 3.999999999999999
+# Title:Angle, From:Radian, To:Degree
+# Radian=3.999999999999999, Overflow
+0, 2, 0, 3.9999999999999999
+# Title:Angle, From:Degree, To:Radian
+# Degree=e, Radian=1.74532925199433e-2
+0, 0, 2, e
+# Title:Angle, From:Degree, To:Radian
+# Degree=1.e+0, Radian=1.74532925199433e-2
+0, 0, 2, 1.e+0
+# Title:Angle, From:Degree, To:Radian
+# Degree=3.3.3, Invalid value
+0, 0, 2, 3.3.3
+# Title:Weight/Mass, From:Gram, To:Kilogram
+# Gram=1000, Kilogram=1
+10, 4, 6, 1000
+# Title:Temperature, From:Degrees Celsius, To:Degrees Celsius
+# Degrees Celsius=0, Degrees Celsius=0
+6, 0, 0, 0
+# Title:Length, From:Centimeters, To:Mile
+# Centimeters=+0.0000000000000001, Mile=Overflow
+3, 1, 11, +0.0000000000000001
+# Title:Length, From:Centimeters, To:Mile
+# Centimeters=+0.000000000000001, Mile=6.21371192237334e-21
+3, 1, 11, +0.000000000000001
+# Title:Temperature, From:Kelvin, To:Degrees Celsius
+# Kelvin=272.15, Degree Celsius=-1
+6, 2, 0, 272.15
+# Title:Temperature, From:Degrees Celsius, To:Degress Fahrenheit
+# Degree Celsius=100, Degress Fahrenheit=212
+6, 0, 1, 100

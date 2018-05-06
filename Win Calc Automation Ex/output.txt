@@ -1,0 +1,98 @@
+# Title:Angle, From:Degree, To:Radian
+
+# Degree=50, Radian=0.8726646259971647
+
+From->To: 0.8726646259971647
+To->From: 50
+-----------------------------------------------------
+# Title:Angle, From:Degree, To:Gradian
+
+# Degree=1.23, Radian=1.366666666666667
+
+From->To: 1.366666666666667
+To->From: 1.23
+-----------------------------------------------------
+# Title:Weight/Mass, From:Gram, To:Tonne
+
+# Gram=14.0, Tonne=0.000014
+
+From->To: 0.000014
+To->From: 14
+-----------------------------------------------------
+# Title:Angle, From:Radian, To:Degree
+
+# Radian=3.999999999999999, Degree=229.1831180523292
+
+From->To: 229.1831180523292
+To->From: 3.999999999999998
+-----------------------------------------------------
+# Title:Angle, From:Radian, To:Degree
+
+# Radian=3.999999999999999, Overflow
+
+From->To: 
+To->From: 
+-----------------------------------------------------
+# Title:Angle, From:Degree, To:Radian
+
+# Degree=e, Radian=1.74532925199433e-2
+
+From->To: 1.74532925199433e-2
+To->From: 1.e+0
+-----------------------------------------------------
+# Title:Angle, From:Degree, To:Radian
+
+# Degree=1.e+0, Radian=1.74532925199433e-2
+
+From->To: 1.74532925199433e-2
+To->From: 1.e+0
+-----------------------------------------------------
+# Title:Angle, From:Degree, To:Radian
+
+# Degree=3.3.3, Invalid value
+
+From->To: 
+To->From: 
+-----------------------------------------------------
+# Title:Weight/Mass, From:Gram, To:Kilogram
+
+# Gram=1000, Kilogram=1
+
+From->To: 1
+To->From: 1000
+-----------------------------------------------------
+# Title:Temperature, From:Degrees Celsius, To:Degrees Celsius
+
+# Degrees Celsius=0, Degrees Celsius=0
+
+From->To: 0
+To->From: 0
+-----------------------------------------------------
+# Title:Length, From:Centimeters, To:Mile
+
+# Centimeters=+0.0000000000000001, Mile=Overflow
+
+From->To: Overflow
+To->From: 1.609344e+5
+-----------------------------------------------------
+# Title:Length, From:Centimeters, To:Mile
+
+# Centimeters=+0.000000000000001, Mile=6.21371192237334e-21
+
+From->To: 6.21371192237334e-21
+To->From: 1.e-15
+-----------------------------------------------------
+# Title:Temperature, From:Kelvin, To:Degrees Celsius
+
+# Kelvin=272.15, Degree Celsius=-1
+
+From->To: -1
+To->From: 272.15
+-----------------------------------------------------
+# Title:Temperature, From:Degrees Celsius, To:Degress Fahrenheit
+
+# Degree Celsius=100, Degress Fahrenheit=212
+
+From->To: 212
+To->From: 100
+-----------------------------------------------------

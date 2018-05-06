@@ -1,0 +1,117 @@
+#0	Angle#
+0	Degree
+1	Gradian
+2	Radian
+------------------------------
+#1	Area#
+0	Acres
+1	Hectares
+2	Square centimeter
+3	Square feet
+4	Square inch
+5	Square kilometer
+6	Square meters
+7	Square mile
+8	Square millimeter
+9	Square Yard
+------------------------------
+#2	Energy#
+0	British Thermal Unit
+1	Calorie
+2	Electron-Volts
+3	Foot-Pound
+4	Joule
+5	Kilocalorie
+6	Kilojoule
+------------------------------
+#3	Length#
+0	Angstrom
+1	Centimeters
+2	Chain
+3	Fathom
+4	Feet
+5	Hand
+6	Inch
+7	Kilometers
+8	Link
+9	Meter
+10	Microns
+11	Mile
+12	Millimeters
+13	Nanometer
+14	Nautical Miles
+15	PICA
+16	Rods
+17	Span
+18	Yard
+------------------------------
+#4	Power#
+0	BTU/minute
+1	Foot-Pound/minute
+2	Horsepower
+3	Kilowatt
+4	Watt
+------------------------------
+#5	Pressure#
+0	Atmosphere
+1	Bar
+2	Kilo Pascal
+3	Millimeter of mercury
+4	Pascal
+5	Pound per square inch (PSI)
+------------------------------
+#6	Temperature#
+0	Degrees Celsius
+1	Degrees Fahrenheit
+2	Kelvin
+------------------------------
+#7	Time#
+0	Day
+1	Hour
+2	Microsecond
+3	Millisecond
+4	Minute
+5	Second
+6	Week
+------------------------------
+#8	Velocity#
+0	Centimeter per second
+1	Feet per second
+2	Kilometer per hour
+3	Knots
+4	Mach (at std. atm)
+5	Meter per second
+6	Miles per hour
+------------------------------
+#9	Volume#
+0	Cubic centimeter
+1	Cubic feet
+2	Cubic inch
+3	Cubic meter
+4	Cubic yard
+5	Fluid ounce (UK)
+6	Fluid ounce (US)
+7	Gallon (UK)
+8	Gallon (US)
+9	Liter
+10	Pint (UK)
+11	Pint (US)
+12	Quart (UK)
+13	Quart (US)
+------------------------------
+#10	Weight/Mass#
+0	Carat
+1	Centigram
+2	Decigram
+3	Dekagram
+4	Gram
+5	Hectogram
+6	Kilogram
+7	Long ton
+8	Milligram
+9	Ounce
+10	Pound
+11	Short ton
+12	Stone
+13	Tonne
+------------------------------

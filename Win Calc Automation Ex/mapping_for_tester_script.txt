@@ -1,0 +1,56 @@
+#!/usr/bin/perl
+
+# http://www.piotrkaluski.com/files/winguitest/docs/winguitest.html#SelComboItemText
+
+sub init_workplace {
+	use strict;
+	use warnings;
+	use Win32::GuiTest qw/:ALL/;
+
+	$Win32::GuiTest::debug = 0;
+}
+
+sub set_calc_focus {
+	my @arr = FindWindowLike(undef, 'Calculator');
+	SetFocus($arr[0]);
+}
+
+sub open_unit_coversion {
+	set_calc_focus();
+	SendRawKey(VK_LCONTROL, KEYEVENTF_EXTENDEDKEY);
+	SendKeys('u');
+	SendRawKey(VK_LCONTROL, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP);
+}
+
+init_workplace();
+set_calc_focus();
+open_unit_coversion();
+
+# reset calc conversion view to be on Angle(or first combo title) !
+
+my @windows = FindWindowLike(undef, "Calculator");
+my @children = GetChildWindows($windows[0]);
+my @combo1 = GetComboContents($children[40]);
+
+open my $outputHandler, '>', "mapping_for_tester.txt" or die "#ERROR: can't open file#\n";
+
+for(my $i=0; $i<=$#combo1; $i++) {
+	
+	print $outputHandler "#$i\t$combo1[$i]#\n";
+	
+	my @combo2 = GetComboContents( $children[43] );
+	for(my $j=0; $j<=$#combo2; $j++) {
+		print $outputHandler "$j\t$combo2[$j]\n";
+	}
+	print $outputHandler "------------------------------\n";
+	
+	sleep 2;
+	
+	SetFocus($children[40]);
+	SendKeys('{DOW}');
+}
+
+close($outputHandler) or die "#ERROR: couldn't close file#\n";
+
+
+
