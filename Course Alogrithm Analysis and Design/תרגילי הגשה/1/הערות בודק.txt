@@ -1,0 +1,4 @@
+	
+9.vav) probably you meant: –infinity  --- checked, there was a minus missing
+
+9.het) lambda = 0 is also a solution! --- checked, indeed there was a case missing!, but the way is correct!
