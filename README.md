@@ -14,6 +14,7 @@ Pls Notice:
  they contain HW/class assignmnets/lecture presentations etc. for potential employer/recruiter to get more insight
  for my set of skills. I expect this material to show deep understanding of the material that may come in hand and also,
  disclose subjects and sepcific areas that were tought in those courses and I can be of assistance depending 
- on compnay needs/ area of exeprtise.  
+ on compnay needs/ area of exeprtise. 
+ (with dirs that contain empty lecture contents I have a well elaborated printed version that I wrote in class)
 
 
