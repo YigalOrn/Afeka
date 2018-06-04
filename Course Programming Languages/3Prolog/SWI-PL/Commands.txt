@@ -1,0 +1,8 @@
+file endings with -  .pl
+
+-----------
+edit.
+(--open a new window, edit it and save, Ctrl+s--)
+make.
+
+trace/notrace or gtrace(graphical trace)

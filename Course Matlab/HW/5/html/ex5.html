@@ -1,0 +1,653 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>ex5</title><meta name="generator" content="MATLAB 8.1"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2014-10-07"><meta name="DC.source" content="ex5.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, tt, code { font-size:12px; }
+pre { margin:0px 0px 20px; }
+pre.error { color:red; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Ex_5</a></li><li><a href="#2">ex5_1</a></li><li><a href="#3">ex5_2</a></li><li><a href="#4">ex5_3</a></li><li><a href="#5">ex5_4</a></li><li><a href="#6">b)</a></li><li><a href="#7">ex5_5</a></li><li><a href="#8">ex5_6</a></li><li><a href="#9">ex5_7</a></li><li><a href="#10">ex5_8</a></li><li><a href="#11">ex5_9,10</a></li></ul></div><h2>Ex_5<a name="1"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;format <span class="string">short</span>;format <span class="string">compact</span>;close <span class="string">all</span>;
+</pre><h2>ex5_1<a name="2"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;
+
+h = 0:3:33 ;
+D = [1.2,0.91,0.66,0.47,0.31,0.19,0.12,0.075,0.046,0.029,0.018,0.011] ;
+
+<span class="comment">% a)</span>
+n = 3 ;
+p = polyfit(h,D, n);
+
+<span class="comment">% b)</span>
+
+hi = linspace(0,33);
+yi = interp1(h,D,hi,<span class="string">'spline'</span>);
+
+y_p = polyval(p,hi);
+
+subplot(2,1,1);
+plot(h,D,<span class="string">'bo'</span>,hi,yi,<span class="string">'g-'</span>);<span class="comment">%%check this plot please !</span>
+legend(<span class="string">'Data points'</span>,<span class="string">'interpolation'</span>);
+xlabel(<span class="string">'h [km]'</span>);
+ylabel(<span class="string">'D [kg/m^3]'</span>);
+title(<span class="string">'standard air density estimation plot '</span>);
+
+subplot(2,1,2);
+plot(h,D,<span class="string">'bo'</span>, hi,y_p,<span class="string">'r--'</span>);
+legend(<span class="string">'Data points'</span>,<span class="string">'polynomial(polyval)'</span>);
+</pre><img vspace="5" hspace="5" src="ex5_01.png" alt=""> <h2>ex5_2<a name="3"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;
+
+
+
+R = 1.5;
+h = 3 ;
+n = 3 ;
+
+t = linspace(0,300) ; <span class="comment">% Dr Yaniv told me, it is missing</span>
+
+x = R*cos(2*pi*n*t/h) ;
+y = R*sin(2*pi*n*t/h) ;
+z = t/h ;
+
+
+plot3(x,y,z);
+</pre><img vspace="5" hspace="5" src="ex5_02.png" alt=""> <h2>ex5_3<a name="4"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;
+
+
+pyramid( 8, 3) ;
+<span class="comment">% pyramid( 15, 6) ;</span>
+<span class="comment">% pyramid( 6, 10) ;</span>
+<span class="comment">% pyramid( 6, 6) ;</span>
+</pre><img vspace="5" hspace="5" src="ex5_03.png" alt=""> <h2>ex5_4<a name="5"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;close <span class="string">all</span>;
+
+
+<span class="comment">% a)</span>
+
+x = linspace(-4,4);
+y = linspace(-40,40);
+
+[X, Y] = meshgrid(x,y);
+
+z = -0.25*X.^4 + -1/6*Y.^2 ;
+
+grid <span class="string">on</span>;
+colormap <span class="string">Autumn</span>
+
+subplot(2,2,1);
+mesh(X,Y,z);
+colorbar(<span class="string">'location'</span>,<span class="string">'EastOutside'</span>);
+
+subplot(2,2,2);
+surf(X,Y,z,<span class="string">'FaceColor'</span>,<span class="string">'red'</span>,<span class="string">'EdgeColor'</span>,<span class="string">'none'</span>);
+camlight <span class="string">left</span>; lighting <span class="string">phong</span>;
+<span class="comment">%surf(X,Y,z);</span>
+colorbar(<span class="string">'location'</span>,<span class="string">'EastOutside'</span>);
+
+subplot(2,2,3);
+contour3(X,Y,z);
+colorbar(<span class="string">'location'</span>,<span class="string">'EastOutside'</span>);
+
+subplot(2,2,4);
+surfc(X,Y,z);
+colorbar(<span class="string">'location'</span>,<span class="string">'EastOutside'</span>);
+</pre><img vspace="5" hspace="5" src="ex5_04.png" alt=""> <h2>b)<a name="6"></a></h2><pre class="codeinput">close <span class="string">all</span>;clc;clear <span class="string">all</span>;
+
+x = linspace(-180,180);
+y = x ;
+
+[X, Y] = meshgrid(x,y);
+
+z = sind(X).^2; <span class="comment">% sin(X).*sin(Y) = sin(X).*sin(X)</span>
+
+grid <span class="string">on</span>;
+colormap <span class="string">Autumn</span>
+
+subplot(2,2,1);
+mesh(X,Y,z);
+colorbar(<span class="string">'location'</span>,<span class="string">'EastOutside'</span>);
+
+subplot(2,2,2);
+surf(X,Y,z);
+colorbar(<span class="string">'location'</span>,<span class="string">'EastOutside'</span>);
+
+subplot(2,2,3);
+contour3(X,Y,z);
+colorbar(<span class="string">'location'</span>,<span class="string">'EastOutside'</span>);
+
+subplot(2,2,4);
+surfc(X,Y,z);
+colorbar(<span class="string">'location'</span>,<span class="string">'EastOutside'</span>);
+</pre><img vspace="5" hspace="5" src="ex5_05.png" alt=""> <h2>ex5_5<a name="7"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;close <span class="string">all</span>;
+
+f = <span class="string">'x*exp(-x)-0.2'</span>  ;
+ezplot(f,[0,8]) ;
+<span class="comment">%fplot(f,[0,8]) ;</span>
+
+vec = [0,3] ;<span class="comment">%assumed roots , from the previous plot.</span>
+k = 1 ;
+<span class="keyword">for</span>(i=vec)
+
+    r(k)= fzero(f,i);
+    k = k+1;
+
+<span class="keyword">end</span>
+
+
+hold <span class="string">on</span>;
+plot(r,zeros(1,length(r)),<span class="string">'rd'</span>)
+grid <span class="string">on</span>;
+</pre><img vspace="5" hspace="5" src="ex5_06.png" alt=""> <h2>ex5_6<a name="8"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;close <span class="string">all</span>;
+
+f = <span class="string">'x^3-12*x^2+40.25*x-36.6'</span> ;
+ezplot(f,[0,8])
+grid <span class="string">on</span>;
+
+vec = [2,6] <span class="comment">%assumed min/max points , from the previous plot.</span>
+k = 1 ;
+hold <span class="string">on</span>;
+<span class="keyword">for</span> (i=vec)
+
+    <span class="comment">%can be done recursively without the k parameter.</span>
+    [xmin(k) ymin(k)] = fminsearch(f,i);
+    [xmax(k) ymax(k)] = fminsearch([<span class="string">'-('</span>,f,<span class="string">')'</span>],i);
+    k = k+1 ;
+
+<span class="keyword">end</span>
+
+
+plot(xmin,ymin,<span class="string">'b^'</span>);
+plot(xmax ,-1*ymax,<span class="string">'b^'</span>);
+</pre><pre class="codeoutput">vec =
+     2     6
+ 
+Exiting: Maximum number of function evaluations has been exceeded
+         - increase MaxFunEvals option.
+         Current function value: -2037035976334495000000000000000000000000000000000000000000000000000000000000000000000000.000000 
+
+ 
+Exiting: Maximum number of function evaluations has been exceeded
+         - increase MaxFunEvals option.
+         Current function value: -54999971361032855000000000000000000000000000000000000000000000000000000000000000000000000.000000 
+
+</pre><img vspace="5" hspace="5" src="ex5_07.png" alt=""> <h2>ex5_7<a name="9"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;close <span class="string">all</span>;
+
+
+<span class="comment">% 1) using trapz()</span>
+x = linspace(0,8);
+y = x.*exp(-x.^0.8)+0.2' ;
+s1 = trapz(x,y)
+
+f = <span class="string">'x.*exp(-x.^0.8)+0.2'</span>;
+
+<span class="comment">% 2)</span>
+s2 = quad(f,0,8)
+<span class="comment">% 3)</span>
+s3 = quadl(f,0,8)
+
+
+
+<span class="comment">% msgbox({['using trapz :  ',num2str(s1)], ['using quad :  ',num2str(s2)]...</span>
+<span class="comment">%     ['using quadl :  ',num2str(s3)]}, 'ex5_7');</span>
+
+<span class="comment">% h = msgbox({['using trapz :  ',num2str(s1)], ['using quad :  ',num2str(s2)]...</span>
+<span class="comment">%     ['using quadl :  ',num2str(s3)]}, 'ex5_7');</span>
+<span class="comment">% ah = get( h, 'CurrentAxes' );</span>
+<span class="comment">% ch = get( ah, 'Children' );</span>
+<span class="comment">% set( ch, 'FontSize', 12 );</span>
+</pre><pre class="codeoutput">s1 =
+    3.1599
+s2 =
+    3.1604
+s3 =
+    3.1604
+</pre><h2>ex5_8<a name="10"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;close <span class="string">all</span>;
+
+figure(1);
+<span class="comment">% 1)</span>
+y = <span class="string">'exp(x).*sin(x)-cos(x)'</span> ;
+fplot(y,[-2*pi,pi],<span class="string">'k-'</span>);
+<span class="comment">% grid on;</span>
+hold <span class="string">on</span>;
+
+x = linspace(-2*pi,pi,100) ; <span class="comment">% the 100 is just for me !</span>
+y = exp(x).*sin(x)-cos(x) ;
+
+<span class="comment">% 2)</span>
+
+dx1 = diff(x);
+dy1 = diff(y);
+y1 = dy1./dx1 ;
+xnew1 = x(1:99);
+plot(xnew1, y1, <span class="string">'-g'</span>);
+
+
+<span class="comment">% 3)</span>
+
+dx2 = diff(xnew1);
+dy2 = diff(y1);
+y2 = dy2./dx2 ;
+xnew2 = x(1:98) ;
+plot(xnew2, y2, <span class="string">'r-'</span>)
+
+
+<span class="comment">% % CHECK</span>
+<span class="comment">% figure(2);</span>
+<span class="comment">%</span>
+<span class="comment">% f1 = 'exp(x)*sin(x) - cos(x)'</span>
+<span class="comment">% fplot(f1,[-2*pi,pi],'b-');</span>
+<span class="comment">% % grid on ;</span>
+<span class="comment">%  hold on;</span>
+<span class="comment">%</span>
+<span class="comment">% f2 = 'sin(x)*(exp(x)+1) + exp(x)*cos(x)'</span>
+<span class="comment">% fplot(f2,[-2*pi,pi],'g-');</span>
+<span class="comment">%</span>
+<span class="comment">% f3 = 'cos(x)*(2*exp(x)+1)'</span>
+<span class="comment">% fplot(f3,[-2*pi,pi],'r-');</span>
+</pre><img vspace="5" hspace="5" src="ex5_08.png" alt=""> <h2>ex5_9,10<a name="11"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;close <span class="string">all</span>;
+
+<span class="comment">%sorry i dont think i understood this ex!!</span>
+<span class="comment">%if it is not hard for you can you please please write your remarks here</span>
+<span class="comment">%i will not tell or show any one and this is the last assignment....</span>
+<span class="comment">%thank you very much!!</span>
+
+
+<span class="comment">% -------</span>
+x = linspace(-pi,pi,10000);
+y = exp(x./2).*sin(x) - x./2 ;
+s1 = trapz(x,y)
+
+f = <span class="string">'exp(x./2).*sin(x) - x./2'</span>;
+s2 = quad(f,-pi,pi)
+tic
+s3 = quadl(f,-pi,pi)
+toc
+<span class="comment">% -------</span>
+disp(<span class="string">'------------------'</span>);
+
+res1 = integral_1(y,x)
+res2 = integral_2(y,x)
+</pre><pre class="codeoutput">s1 =
+    3.6821
+s2 =
+    3.6821
+s3 =
+    3.6821
+Elapsed time is 0.032510 seconds.
+------------------
+Elapsed time is 0.000410 seconds.
+res1 =
+    3.6821
+Elapsed time is 0.000148 seconds.
+res2 =
+    3.6821
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2013a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Ex_5
+clc;clear all;format short;format compact;close all;
+%% ex5_1
+clc;clear all;
+
+h = 0:3:33 ;
+D = [1.2,0.91,0.66,0.47,0.31,0.19,0.12,0.075,0.046,0.029,0.018,0.011] ;
+
+% a)
+n = 3 ;
+p = polyfit(h,D, n);
+
+% b)
+
+hi = linspace(0,33);
+yi = interp1(h,D,hi,'spline');
+
+y_p = polyval(p,hi);
+
+subplot(2,1,1);
+plot(h,D,'bo',hi,yi,'g-');%%check this plot please !
+legend('Data points','interpolation');
+xlabel('h [km]');
+ylabel('D [kg/m^3]');
+title('standard air density estimation plot ');
+
+subplot(2,1,2);
+plot(h,D,'bo', hi,y_p,'rREPLACE_WITH_DASH_DASH');
+legend('Data points','polynomial(polyval)');
+
+
+%% ex5_2
+clc;clear all;
+
+
+
+R = 1.5;
+h = 3 ;
+n = 3 ;
+
+t = linspace(0,300) ; % Dr Yaniv told me, it is missing
+
+x = R*cos(2*pi*n*t/h) ;
+y = R*sin(2*pi*n*t/h) ;
+z = t/h ;
+
+
+plot3(x,y,z);
+
+
+
+
+%%  ex5_3
+clc;clear all;
+
+
+pyramid( 8, 3) ;
+% pyramid( 15, 6) ;
+% pyramid( 6, 10) ;
+% pyramid( 6, 6) ;
+
+%%  ex5_4
+clc;clear all;close all;
+
+
+% a)
+
+x = linspace(-4,4);
+y = linspace(-40,40);
+
+[X, Y] = meshgrid(x,y);
+
+z = -0.25*X.^4 + -1/6*Y.^2 ;
+
+grid on;
+colormap Autumn
+
+subplot(2,2,1);
+mesh(X,Y,z);
+colorbar('location','EastOutside');
+
+subplot(2,2,2);
+surf(X,Y,z,'FaceColor','red','EdgeColor','none');
+camlight left; lighting phong;
+%surf(X,Y,z);
+colorbar('location','EastOutside');
+
+subplot(2,2,3);
+contour3(X,Y,z);
+colorbar('location','EastOutside');
+
+subplot(2,2,4);
+surfc(X,Y,z);
+colorbar('location','EastOutside');
+
+
+%% b)
+close all;clc;clear all;
+
+x = linspace(-180,180);
+y = x ;
+
+[X, Y] = meshgrid(x,y);
+
+z = sind(X).^2; % sin(X).*sin(Y) = sin(X).*sin(X)
+
+grid on;
+colormap Autumn
+
+subplot(2,2,1);
+mesh(X,Y,z);
+colorbar('location','EastOutside');
+
+subplot(2,2,2);
+surf(X,Y,z);
+colorbar('location','EastOutside');
+
+subplot(2,2,3);
+contour3(X,Y,z);
+colorbar('location','EastOutside');
+
+subplot(2,2,4);
+surfc(X,Y,z);
+colorbar('location','EastOutside');
+
+
+
+%% ex5_5
+clc;clear all;close all;
+
+f = 'x*exp(-x)-0.2'  ;
+ezplot(f,[0,8]) ;
+%fplot(f,[0,8]) ;
+
+vec = [0,3] ;%assumed roots , from the previous plot.
+k = 1 ;
+for(i=vec)
+    
+    r(k)= fzero(f,i);
+    k = k+1;
+    
+end
+
+
+hold on;
+plot(r,zeros(1,length(r)),'rd')
+grid on;
+
+
+%% ex5_6
+clc;clear all;close all;
+
+f = 'x^3-12*x^2+40.25*x-36.6' ;
+ezplot(f,[0,8])
+grid on;
+
+vec = [2,6] %assumed min/max points , from the previous plot.
+k = 1 ;
+hold on;
+for (i=vec)
+    
+    %can be done recursively without the k parameter.
+    [xmin(k) ymin(k)] = fminsearch(f,i);
+    [xmax(k) ymax(k)] = fminsearch(['-(',f,')'],i);
+    k = k+1 ;
+    
+end
+
+
+plot(xmin,ymin,'b^');
+plot(xmax ,-1*ymax,'b^');
+
+
+%% ex5_7
+clc;clear all;close all;
+
+
+% 1) using trapz()
+x = linspace(0,8);
+y = x.*exp(-x.^0.8)+0.2' ;
+s1 = trapz(x,y)
+
+f = 'x.*exp(-x.^0.8)+0.2';
+
+% 2)
+s2 = quad(f,0,8)
+% 3)
+s3 = quadl(f,0,8)
+
+
+
+% msgbox({['using trapz :  ',num2str(s1)], ['using quad :  ',num2str(s2)]...
+%     ['using quadl :  ',num2str(s3)]}, 'ex5_7');
+
+% h = msgbox({['using trapz :  ',num2str(s1)], ['using quad :  ',num2str(s2)]...
+%     ['using quadl :  ',num2str(s3)]}, 'ex5_7');
+% ah = get( h, 'CurrentAxes' );
+% ch = get( ah, 'Children' );
+% set( ch, 'FontSize', 12 );
+
+
+%% ex5_8
+clc;clear all;close all;
+
+figure(1);
+% 1)
+y = 'exp(x).*sin(x)-cos(x)' ;
+fplot(y,[-2*pi,pi],'k-');
+% grid on;
+hold on;
+
+x = linspace(-2*pi,pi,100) ; % the 100 is just for me !
+y = exp(x).*sin(x)-cos(x) ;
+
+% 2)
+
+dx1 = diff(x);
+dy1 = diff(y);
+y1 = dy1./dx1 ;
+xnew1 = x(1:99);
+plot(xnew1, y1, '-g');
+
+
+% 3)
+
+dx2 = diff(xnew1);
+dy2 = diff(y1);
+y2 = dy2./dx2 ;
+xnew2 = x(1:98) ;
+plot(xnew2, y2, 'r-')
+
+
+% % CHECK
+% figure(2);
+%
+% f1 = 'exp(x)*sin(x) - cos(x)'
+% fplot(f1,[-2*pi,pi],'b-');
+% % grid on ;
+%  hold on;
+%
+% f2 = 'sin(x)*(exp(x)+1) + exp(x)*cos(x)'
+% fplot(f2,[-2*pi,pi],'g-');
+%
+% f3 = 'cos(x)*(2*exp(x)+1)'
+% fplot(f3,[-2*pi,pi],'r-');
+
+
+
+
+%% ex5_9,10
+clc;clear all;close all;
+
+%sorry i dont think i understood this ex!!
+%if it is not hard for you can you please please write your remarks here
+%i will not tell or show any one and this is the last assignment....
+%thank you very much!!
+
+
+% REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-
+x = linspace(-pi,pi,10000);
+y = exp(x./2).*sin(x) - x./2 ;
+s1 = trapz(x,y)
+
+f = 'exp(x./2).*sin(x) - x./2';
+s2 = quad(f,-pi,pi)
+tic
+s3 = quadl(f,-pi,pi)
+toc
+% REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-
+disp('REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH');
+
+res1 = integral_1(y,x)
+res2 = integral_2(y,x)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### SOURCE END #####
+--></body></html>

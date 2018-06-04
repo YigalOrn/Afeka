@@ -1,0 +1,559 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html xmlns:mwsh="http://www.mathworks.com/namespace/mcode/v1/syntaxhighlight.dtd">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      -->
+      <title>Class_Work_12</title>
+      <meta name="generator" content="MATLAB 7.6">
+      <meta name="date" content="2013-01-05">
+      <meta name="m-file" content="class_work_12"><style>
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head>
+   <body>
+      <div class="content">
+         <h1>Class_Work_12</h1>
+         <introduction></introduction>
+         <h2>Contents</h2>
+         <div>
+            <ul>
+               <li><a href="#1">fplot- plot a function defined as string  between specified limits</a></li>
+               <li><a href="#2">syntax: fplot('string,[ xmin, xmax])</a></li>
+               <li><a href="#3">ezplot- Easy-to-use function plotter</a></li>
+               <li><a href="#4">plots the expression fun(x) over the default domain -2pi &lt; x &lt; 2pi</a></li>
+               <li><a href="#5">syntax: ezplot('string')</a></li>
+               <li><a href="#6">fzero- Find root of function of one variable</a></li>
+               <li><a href="#7">class_assign_12,1</a></li>
+               <li><a href="#8">class_assign_12,2</a></li>
+               <li><a href="#9">fminsearch, fminbnd</a></li>
+               <li><a href="#10">Find minimum of function</a></li>
+               <li><a href="#11">[xmin1, ymin1] = fminbnd(fun,x1,x2)</a></li>
+               <li><a href="#12">Finds the minimum of a function of one variable within a fixed interval</a></li>
+               <li><a href="#13">maximum of a function</a></li>
+               <li><a href="#14">class_assign_12, 3</a></li>
+               <li><a href="#15">diff- Differences and approximate derivatives</a></li>
+               <li><a href="#16">syntax Y = diff(X) :  calculates differences between adjacent elements of</a></li>
+               <li><a href="#17">syntax: Y = diff(X,n): applies diff recursively n times</a></li>
+               <li><a href="#18">Example: approximate derivative of y=x.*sin(x);</a></li>
+               <li><a href="#19">trapz - Trapezoidal numerical integration</a></li>
+               <li><a href="#20">quad  quadl on 'string_function'</a></li>
+               <li><a href="#21">Example of an Integral</a></li>
+               <li><a href="#23">class_assign_12,4</a></li>
+            </ul>
+         </div>
+         <h2>fplot- plot a function defined as string  between specified limits<a name="1"></a></h2>
+         <h2>syntax: fplot('string,[ xmin, xmax])<a name="2"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;clf;format <span class="string">compact</span>
+f1=<span class="string">'x^3-exp(x)'</span>;
+f2=<span class="string">'t^3-exp(t)'</span>;
+fplot(f1,[-2 2])
+fplot(f1,[-2 2],<span class="string">'r'</span>)
+grid <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="class_work_12_01.png"> <h2>ezplot- Easy-to-use function plotter<a name="3"></a></h2>
+         <h2>plots the expression fun(x) over the default domain -2pi &lt; x &lt; 2pi<a name="4"></a></h2>
+         <h2>syntax: ezplot('string')<a name="5"></a></h2><pre class="codeinput">ezplot(f1)
+ezplot(f1,[-2 2])
+grid <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="class_work_12_02.png"> <h2>fzero- Find root of function of one variable<a name="6"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;clf;format <span class="string">compact</span>
+func=<span class="string">'0.8*x^3-exp(x)+1.5'</span>
+fplot(func,[-1.2 2]);grid <span class="string">on</span>
+r1=fzero(func,-1)
+r2=fzero(func,0.5)
+r3=fzero(func,1.5)
+hold <span class="string">on</span>
+plot([r1 r2 r3],[0 0 0],<span class="string">'ro'</span>)
+hold <span class="string">off</span>
+</pre><pre class="codeoutput">func =
+0.8*x^3-exp(x)+1.5
+r1 =
+   -1.1382
+r2 =
+    0.4542
+r3 =
+    1.7290
+</pre><img vspace="5" hspace="5" src="class_work_12_03.png"> <h2>class_assign_12,1<a name="7"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>; format <span class="string">compact</span>;clf
+func=<span class="string">'cos(x)-2*x^3'</span>;
+fplot(func,[-2*pi 2*pi])
+grid <span class="string">on</span>
+x0=fzero(func,0)
+hold <span class="string">on</span>
+plot(x0,0,<span class="string">'ro'</span>)
+hold <span class="string">off</span>
+</pre><pre class="codeoutput">x0 =
+    0.7214
+</pre><img vspace="5" hspace="5" src="class_work_12_04.png"> <h2>class_assign_12,2<a name="8"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>; format <span class="string">compact</span>;clf
+func=<span class="string">'2*sin(x)-sqrt(x)+2.5'</span>;
+fplot(func,[0 10])
+grid <span class="string">on</span>
+r1=fzero(func,2)
+r2=fzero(func,5.5)
+r3=fzero(func,10)
+hold <span class="string">on</span>
+plot([r1 r2 r3],[0 0 0],<span class="string">'ro'</span>)
+</pre><pre class="codeoutput">r1 =
+    3.4664
+r2 =
+    6.2869
+r3 =
+    9.1585
+</pre><img vspace="5" hspace="5" src="class_work_12_05.png"> <h2>fminsearch, fminbnd<a name="9"></a></h2>
+         <h2>Find minimum of function<a name="10"></a></h2>
+         <p>Syntax:  [xmin1,ymin1] = fminsearch(fun,x0) Starts at the point x0 and finds a local minimum xmin1 and ymin1 of the function
+            described in fun
+         </p><pre class="codeinput">clc;clear <span class="string">all</span>; format <span class="string">compact</span>;clf
+h1=<span class="string">'sin(x)*exp(0.1*x)*x'</span>
+ ezplot(h1)
+ grid <span class="string">on</span>
+ hold <span class="string">on</span>
+ [Xmin1,Ymin1]=fminsearch(h1,-4)
+ plot(Xmin1,Ymin1,<span class="string">'^k'</span>)
+</pre><pre class="codeoutput">h1 =
+sin(x)*exp(0.1*x)*x
+Xmin1 =
+   -4.8194
+Ymin1 =
+   -2.9594
+</pre><img vspace="5" hspace="5" src="class_work_12_06.png"> <h2>[xmin1, ymin1] = fminbnd(fun,x1,x2)<a name="11"></a></h2>
+         <h2>Finds the minimum of a function of one variable within a fixed interval<a name="12"></a></h2><pre>Returns a values xmin1 and ymin1 that are a local minimizer of the function that is
+described in fun in the interval x1 &lt; x &lt; x2</pre><pre class="codeinput"> [Xmin2,Ymin2]=fminbnd(h1,-1,1)
+</pre><pre class="codeoutput">Xmin2 =
+  4.0389e-007
+Ymin2 =
+  1.6312e-013
+</pre><h2>maximum of a function<a name="13"></a></h2><pre class="codeinput"> h1M=[<span class="string">'-('</span>,h1,<span class="string">')'</span>]
+[Xmax1,Ymax1]=fminsearch(h1M,-2)
+plot(Xmax1,-Ymax1,<span class="string">'dm'</span>)
+</pre><pre class="codeoutput">h1M =
+-(sin(x)*exp(0.1*x)*x)
+Xmax1 =
+   -1.9601
+Ymax1 =
+   -1.4906
+</pre><img vspace="5" hspace="5" src="class_work_12_07.png"> <h2>class_assign_12, 3<a name="14"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>; format <span class="string">compact</span>;clf
+func=<span class="string">'2*sin(x)-sqrt(x)+2.5'</span>;
+fplot(func,[0 10])
+grid <span class="string">on</span>
+r1=fzero(func,2)
+r2=fzero(func,5.5)
+r3=fzero(func,10)
+hold <span class="string">on</span>
+plot([r1 r2 r3],[0 0 0],<span class="string">'ro'</span>)
+[xmin1 ymin1]=fminsearch(func,4)
+funcM=[<span class="string">'-('</span> func <span class="string">')'</span>]
+[xmax1 ymax1]=fminsearch(funcM,1)
+ymax1=-ymax1;
+[xmax2 ymax2]=fminsearch(funcM,8)
+ymax2=-ymax2;
+plot([xmax1 xmax2],[ymax1 ymax2], <span class="string">'k^'</span>)
+plot(xmin1,ymin1,<span class="string">'go'</span>)
+</pre><pre class="codeoutput">r1 =
+    3.4664
+r2 =
+    6.2869
+r3 =
+    9.1585
+xmin1 =
+    4.8265
+ymin1 =
+   -1.6839
+funcM =
+-(2*sin(x)-sqrt(x)+2.5)
+xmax1 =
+    1.3543
+ymax1 =
+   -3.2896
+xmax2 =
+    7.7642
+ymax2 =
+   -1.7055
+</pre><img vspace="5" hspace="5" src="class_work_12_08.png"> <h2>diff- Differences and approximate derivatives<a name="15"></a></h2>
+         <h2>syntax Y = diff(X) :  calculates differences between adjacent elements of<a name="16"></a></h2>
+         <h2>syntax: Y = diff(X,n): applies diff recursively n times<a name="17"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>; format <span class="string">compact</span>;clf
+x=(1:5).^2;
+dx=diff(x)
+dxx=diff(dx)
+dxx=diff(x,2)
+</pre><pre class="codeoutput">dx =
+     3     5     7     9
+dxx =
+     2     2     2
+dxx =
+     2     2     2
+</pre><img vspace="5" hspace="5" src="class_work_12_09.png"> <h2>Example: approximate derivative of y=x.*sin(x);<a name="18"></a></h2><pre class="codeinput">clc,clear,clf
+x=linspace(0,2*pi);
+x_new=linspace(0,2*pi,99);
+y=x.*sin(x);
+plot(x,y),hold <span class="string">on</span>
+dy_dx=diff(y)./diff(x);
+plot(x_new,dy_dx,<span class="string">'g--'</span>)
+grid <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="class_work_12_10.png"> <h2>trapz - Trapezoidal numerical integration<a name="19"></a></h2>
+         <p>Syntax:  Z = trapz(X,Y)  computes the integral of Y with respect to X using trapezoidal integration</p><pre class="codeinput">clc,clear <span class="string">all</span>;
+x=0:pi/10:pi;
+y=sin(x);
+z1=trapz(x,y)
+</pre><pre class="codeoutput">z1 =
+    1.9835
+</pre><h2>quad  quadl on 'string_function'<a name="20"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;clf
+<span class="comment">% The function QUAD and the function QUAD8 evaluate a definite integral</span>
+<span class="comment">%</span>
+<span class="comment">%syntax:  intergral=quad(func,a,b)</span>
+<span class="comment">% syntax: integral1=quadl(func,a,b)</span>
+<span class="comment">% Remember: that any function called by QUAD WILL be called with a vector argument x. Therefore</span>
+<span class="comment">% you MUST write your function for x so that it works for a vector argument.</span>
+a=0;b=pi;
+x=a:pi/1000:b;
+y=sin(x);
+z1=trapz(x,y)
+f1=<span class="string">'sin(x)'</span>
+z2=quad(f1,a,b)
+z3=quadl(f1,a,b)
+fplot(f1,[a,b])
+grid <span class="string">on</span>
+</pre><pre class="codeoutput">z1 =
+    2.0000
+f1 =
+sin(x)
+z2 =
+    2.0000
+z3 =
+    2.0000
+</pre><img vspace="5" hspace="5" src="class_work_12_11.png"> <h2>Example of an Integral<a name="21"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;clf;format <span class="string">long</span>
+a=0;b=5;
+x=a:pi/1000:b;
+y=1./(0.8*x.^2+0.5*x+2);
+z1=trapz(x,y)
+</pre><pre class="codeoutput">z1 =
+   0.877351992117982
+</pre><img vspace="5" hspace="5" src="class_work_12_12.png"> <pre class="codeinput">f1=<span class="string">'1./(0.8*x.^2+0.5*x+2)'</span>;
+z2=quad(f1,a,b)
+z3=quadl(f1,a,b)
+ezplot(f1,[a,b])
+</pre><pre class="codeoutput">z2 =
+   0.877421770128411
+z3 =
+   0.877422374618447
+</pre><img vspace="5" hspace="5" src="class_work_12_13.png"> <h2>class_assign_12,4<a name="23"></a></h2><pre class="codeinput"><span class="comment">%%%%%%%%%%%%%%</span>
+<span class="comment">%a</span>
+<span class="comment">%%%%%%%%%%%%%%</span>
+clc;clear <span class="string">all</span>;clf;format <span class="string">compact</span>;
+x1=1;x2=14;
+f1=<span class="string">'sqrt(x)+5*sin(x)'</span>
+fplot(f1,[1 14])
+grid <span class="string">on</span>
+Int_f=quad(f1,1,14)
+</pre><pre class="codeoutput">f1 =
+sqrt(x)+5*sin(x)
+Int_f =
+  36.273294382662058
+</pre><img vspace="5" hspace="5" src="class_work_12_14.png"> <pre class="codeinput">t=[2 6 10 12]
+hold <span class="string">on</span>
+<span class="keyword">for</span> i=1:4
+    x0(i)=fzero(f1,t(i));
+  plot(x0,0,<span class="string">'mo'</span>)
+  <span class="keyword">end</span>
+s(1)=quad(f1,1,x0(1))
+</pre><pre class="codeoutput">t =
+     2     6    10    12
+s =
+  11.083948659005820
+</pre><img vspace="5" hspace="5" src="class_work_12_15.png"> <pre class="codeinput"><span class="keyword">for</span> j=1:3
+    s(j+1)=quad(f1,x0(j), x0(j+1));
+<span class="keyword">end</span>
+s(5)=quad(f1,x0(4),x2)
+disp([<span class="string">'The area is '</span>  num2str(sum(s))])
+</pre><pre class="codeoutput">s =
+  Columns 1 through 4
+  11.083948659005820  -4.165322355987570  20.418299718768321  -1.881496781496155
+  Column 5
+  10.817865147580431
+The area is 36.2733
+</pre><pre class="codeinput"><span class="comment">%%%%%%%%%%%%%</span>
+<span class="comment">%b</span>
+<span class="comment">%%%%%%%%%%%%%%</span>
+hold <span class="string">on</span>
+minpoint=[4 10];
+<span class="keyword">for</span> i=1:2
+[xmin(i) ymin(i)]=fminsearch(f1, minpoint(i));
+plot(xmin(i),ymin(i),<span class="string">'rs'</span>)
+
+<span class="keyword">end</span>
+minusf1=[<span class="string">'-('</span> f1 <span class="string">')'</span>]
+maxpoint=[1.5 8];
+<span class="keyword">for</span> i=1:2
+[xmax(i) ymax(i)]=fminsearch(minusf1, maxpoint(i));
+plot(xmax(i),-ymax(i),<span class="string">'sk'</span>)
+<span class="keyword">end</span>
+ <span class="comment">%%%%%%%%%%%%%</span>
+<span class="comment">%c</span>
+<span class="comment">%%%%%%%%%%%%%%</span>
+
+x=linspace(1,14);
+dx=linspace(1,14,99);
+df1=diff(sqrt(x)+5*sin(x))./diff(x);
+
+plot(dx,df1,<span class="string">'k--'</span>)
+</pre><pre class="codeoutput">minusf1 =
+-(sqrt(x)+5*sin(x))
+</pre><img vspace="5" hspace="5" src="class_work_12_16.png"> <p class="footer"><br>
+            Published with MATLAB&reg; 7.6<br></p>
+      </div>
+      <!--
+##### SOURCE BEGIN #####
+%% Class_Work_12
+%% fplot- plot a function defined as string  between specified limits
+%% syntax: fplot('string,[ xmin, xmax])
+clc;clear all;clf;format compact
+f1='x^3-exp(x)';
+f2='t^3-exp(t)';
+fplot(f1,[-2 2])
+fplot(f1,[-2 2],'r')
+grid on
+%% ezplot- Easy-to-use function plotter
+%%  plots the expression fun(x) over the default domain -2pi < x < 2pi
+%% syntax: ezplot('string')
+ezplot(f1)
+ezplot(f1,[-2 2])
+grid on 
+  
+
+%% fzero- Find root of function of one variable
+clc;clear all;clf;format compact
+func='0.8*x^3-exp(x)+1.5'
+fplot(func,[-1.2 2]);grid on
+r1=fzero(func,-1)
+r2=fzero(func,0.5)
+r3=fzero(func,1.5)
+hold on
+plot([r1 r2 r3],[0 0 0],'ro')
+hold off
+%% class_assign_12,1
+clc;clear all; format compact;clf
+func='cos(x)-2*x^3';
+fplot(func,[-2*pi 2*pi])
+grid on
+x0=fzero(func,0)
+hold on
+plot(x0,0,'ro')
+hold off
+%% class_assign_12,2
+clc;clear all; format compact;clf
+func='2*sin(x)-sqrt(x)+2.5';
+fplot(func,[0 10])
+grid on
+r1=fzero(func,2)
+r2=fzero(func,5.5)
+r3=fzero(func,10)
+hold on
+plot([r1 r2 r3],[0 0 0],'ro')
+%%  fminsearch, fminbnd
+%% Find minimum of function 
+% Syntax:  [xmin1,ymin1] = fminsearch(fun,x0)
+% Starts at the point x0 and finds a local minimum xmin1 and ymin1 of the function described in fun
+clc;clear all; format compact;clf
+h1='sin(x)*exp(0.1*x)*x'
+ ezplot(h1)
+ grid on
+ hold on
+ [Xmin1,Ymin1]=fminsearch(h1,-4)
+ plot(Xmin1,Ymin1,'^k')
+ 
+%% [xmin1, ymin1] = fminbnd(fun,x1,x2)
+%% Finds the minimum of a function of one variable within a fixed interval
+%  Returns a values xmin1 and ymin1 that are a local minimizer of the function that is
+%  described in fun in the interval x1 < x < x2
+ [Xmin2,Ymin2]=fminbnd(h1,-1,1)
+ %% maximum of a function 
+ h1M=['-(',h1,')']
+[Xmax1,Ymax1]=fminsearch(h1M,-2)
+plot(Xmax1,-Ymax1,'dm')
+
+%%  class_assign_12, 3
+clc;clear all; format compact;clf
+func='2*sin(x)-sqrt(x)+2.5';
+fplot(func,[0 10])
+grid on
+r1=fzero(func,2)
+r2=fzero(func,5.5)
+r3=fzero(func,10)
+hold on
+plot([r1 r2 r3],[0 0 0],'ro')
+[xmin1 ymin1]=fminsearch(func,4)
+funcM=['-(' func ')']
+[xmax1 ymax1]=fminsearch(funcM,1)
+ymax1=-ymax1;
+[xmax2 ymax2]=fminsearch(funcM,8)
+ymax2=-ymax2;
+plot([xmax1 xmax2],[ymax1 ymax2], 'k^')
+plot(xmin1,ymin1,'go')
+
+%% diff- Differences and approximate derivatives
+%% syntax Y = diff(X) :  calculates differences between adjacent elements of
+%% syntax: Y = diff(X,n): applies diff recursively n times
+clc;clear all; format compact;clf
+x=(1:5).^2;
+dx=diff(x)
+dxx=diff(dx)
+dxx=diff(x,2)
+%%  Example: approximate derivative of y=x.*sin(x);
+clc,clear,clf
+x=linspace(0,2*pi);
+x_new=linspace(0,2*pi,99);
+y=x.*sin(x);
+plot(x,y),hold on
+dy_dx=diff(y)./diff(x);
+plot(x_new,dy_dx,'gREPLACE_WITH_DASH_DASH')
+grid on
+%%  trapz - Trapezoidal numerical integration
+% Syntax:  Z = trapz(X,Y)  computes the integral of Y with respect to X using trapezoidal integration
+clc,clear all;
+x=0:pi/10:pi;
+y=sin(x);
+z1=trapz(x,y)
+%% quad  quadl on 'string_function'
+clc;clear all;clf
+% The function QUAD and the function QUAD8 evaluate a definite integral 
+% 
+%syntax:  intergral=quad(func,a,b)
+% syntax: integral1=quadl(func,a,b)
+% Remember: that any function called by QUAD WILL be called with a vector argument x. Therefore
+% you MUST write your function for x so that it works for a vector argument.
+a=0;b=pi;
+x=a:pi/1000:b;
+y=sin(x);
+z1=trapz(x,y)
+f1='sin(x)'
+z2=quad(f1,a,b)
+z3=quadl(f1,a,b)
+fplot(f1,[a,b])
+grid on
+%% Example of an Integral
+clc;clear all;clf;format long
+a=0;b=5;
+x=a:pi/1000:b;
+y=1./(0.8*x.^2+0.5*x+2);
+z1=trapz(x,y)
+%%
+
+f1='1./(0.8*x.^2+0.5*x+2)';
+z2=quad(f1,a,b)
+z3=quadl(f1,a,b)
+ezplot(f1,[a,b])
+
+%% class_assign_12,4
+%%%%%%%%%%%%%%
+%a
+%%%%%%%%%%%%%%
+clc;clear all;clf;format compact;
+x1=1;x2=14;
+f1='sqrt(x)+5*sin(x)'
+fplot(f1,[1 14])
+grid on
+Int_f=quad(f1,1,14)
+%%
+t=[2 6 10 12]
+hold on
+for i=1:4
+    x0(i)=fzero(f1,t(i));
+  plot(x0,0,'mo')
+  end
+s(1)=quad(f1,1,x0(1))
+%%
+
+for j=1:3
+    s(j+1)=quad(f1,x0(j), x0(j+1));
+end
+s(5)=quad(f1,x0(4),x2)
+disp(['The area is '  num2str(sum(s))])
+%%
+
+%%%%%%%%%%%%%
+%b
+%%%%%%%%%%%%%%
+hold on
+minpoint=[4 10];
+for i=1:2
+[xmin(i) ymin(i)]=fminsearch(f1, minpoint(i));
+plot(xmin(i),ymin(i),'rs')
+
+end
+minusf1=['-(' f1 ')']
+maxpoint=[1.5 8];
+for i=1:2
+[xmax(i) ymax(i)]=fminsearch(minusf1, maxpoint(i));
+plot(xmax(i),-ymax(i),'sk')
+end
+ %%%%%%%%%%%%%
+%c
+%%%%%%%%%%%%%%   
+
+x=linspace(1,14);
+dx=linspace(1,14,99);
+df1=diff(sqrt(x)+5*sin(x))./diff(x);
+
+plot(dx,df1,'kREPLACE_WITH_DASH_DASH')
+
+
+
+##### SOURCE END #####
+-->
+   </body>
+</html>

@@ -1,0 +1,444 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html xmlns:mwsh="http://www.mathworks.com/namespace/mcode/v1/syntaxhighlight.dtd">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      -->
+      <title>Class_Work_11</title>
+      <meta name="generator" content="MATLAB 7.6">
+      <meta name="date" content="2012-12-29">
+      <meta name="m-file" content="class_work_11"><style>
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head>
+   <body>
+      <div class="content">
+         <h1>Class_Work_11</h1>
+         <introduction></introduction>
+         <h2>Contents</h2>
+         <div>
+            <ul>
+               <li><a href="#1">3-D Graphics</a></li>
+               <li><a href="#2">General</a></li>
+               <li><a href="#3">Plot3 - 3D line plot</a></li>
+               <li><a href="#4">class_assign_11,1</a></li>
+               <li><a href="#5">Create one Polygon</a></li>
+               <li><a href="#6">class_assign_11,2</a></li>
+               <li><a href="#7">Spiral</a></li>
+               <li><a href="#8">Meshgrid-Generate two arrays containing the x- and y-coordinates</a></li>
+               <li><a href="#9">at each position in a rectilinear grid</a></li>
+               <li><a href="#10">Syntax: [X,Y]=meshgrid (x,y)</a></li>
+               <li><a href="#11">Surface plot- Example</a></li>
+               <li><a href="#12">mesh(X,Y,Z) &#8211; creates a 3D mesh of the function</a></li>
+               <li><a href="#13">surf(X,Y,Z) &#8211; creates a 3D surface of the function</a></li>
+               <li><a href="#14">contour3(X,Y,Z,n_contours) &#8211; creates a 3D contour of the function</a></li>
+               <li><a href="#15">surfc(X,Y,Z)- draws a contour plot beneath the surface</a></li>
+               <li><a href="#16">Surface plot: z=sin(xy/50)^2+2exp(-(x^2+y^2)/1500)</a></li>
+               <li><a href="#17">View: determines the orientation of the axes</a></li>
+               <li><a href="#18">syntax: view(az,el) for azimuth and elevation</a></li>
+               <li><a href="#19">view ([x,y,z]) for viewpoint location</a></li>
+               <li><a href="#20">%% colorbar</a></li>
+               <li><a href="#21">3D box</a></li>
+               <li><a href="#22">class_assign_11,3</a></li>
+               <li><a href="#23">see minsara.m</a></li>
+               <li><a href="#24">class_assign_11,4</a></li>
+               <li><a href="#25">A tower of prisms</a></li>
+               <li><a href="#26">class_assign_11,5</a></li>
+               <li><a href="#27">Pyramid of prisms</a></li>
+            </ul>
+         </div>
+         <h2>3-D Graphics<a name="1"></a></h2>
+         <h2>General<a name="2"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;clc;clf
+</pre><h2>Plot3 - 3D line plot<a name="3"></a></h2>
+         <p>syntax: plot3(X1,Y1,Z1,S1,...) where X1, Y1, Z1 can be scalars, vectors or matrices, plots one or more lines in 3D space.
+            S1 is a string determines line style, marker symbol, and color of the plotted lines
+         </p><pre class="codeinput">x=-10:0.1:10;
+y=x;
+z=0.1*(x.^2+y.^2);
+plot3(x,y,z)
+grid <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="class_work_11_01.png"> <h2>class_assign_11,1<a name="4"></a></h2><pre class="codeinput">t=0:0.1:20;
+x=(2+4*cos(t)).*cos(t);
+y=(2+4*cos(t)).*sin(t);
+z=t.^2;
+plot3(x,y,z), grid <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="class_work_11_02.png"> <h2>Create one Polygon<a name="5"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;clf;
+R=10;n=6;<span class="comment">%R is the radius, n is the number of the polygon's side</span>
+<span class="comment">%teta divide the circle arc into n equal segments</span>
+teta=linspace(0,2*pi,n+1);
+ <span class="comment">% x and y are the coordinates of the polygon's vertices</span>
+x=R*cos(teta);
+y=R*sin(teta);
+plot(x,y)
+axis <span class="string">square</span>
+axis <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="class_work_11_03.png"> <h2>class_assign_11,2<a name="6"></a></h2>
+         <p>see also polygon.m</p><pre class="codeinput"><span class="comment">%n=input('the number of the polygon's sides? ');</span>
+<span class="comment">%k=input('the number of the polygons?');</span>
+<span class="comment">% for example:</span>
+clc;clear <span class="string">all</span>;clf;
+n=6,k=6
+teta=linspace(0,2*pi,n+1);
+<span class="keyword">for</span> i=1:k
+   x=i*cos(teta);
+   y=i*sin(teta);
+   plot(x,y);
+   hold <span class="string">on</span>
+<span class="keyword">end</span>
+axis <span class="string">square</span>
+hold <span class="string">off</span>
+axis <span class="string">off</span>
+</pre><pre class="codeoutput">n =
+     6
+k =
+     6
+</pre><img vspace="5" hspace="5" src="class_work_11_04.png"> <h2>Spiral<a name="7"></a></h2><pre class="codeinput">r=linspace(0,5,500);
+teta=linspace(0,10*pi,500);
+y=r.*sin(teta);
+x=r.*cos(teta);
+plot(x,y,<span class="string">'ro'</span>)
+</pre><img vspace="5" hspace="5" src="class_work_11_05.png"> <h2>Meshgrid-Generate two arrays containing the x- and y-coordinates<a name="8"></a></h2>
+         <h2>at each position in a rectilinear grid<a name="9"></a></h2>
+         <h2>Syntax: [X,Y]=meshgrid (x,y)<a name="10"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;clc;
+x=1:3;
+y=10:14;
+<span class="comment">% [x1, y1]=meshgrid(x,y)</span>
+ <span class="comment">%returns two 5X3 matrices - the x1 matrix defines the x-coordinates</span>
+ <span class="comment">%and the y1 matrix the y-coordinates at each position in an 5 &times; 3 grid. T</span>
+[x1, y1]=meshgrid(x,y)
+ [x2, y2]=meshgrid(y,x)
+ [x3, y3]=meshgrid(x)
+</pre><pre class="codeoutput">x1 =
+     1     2     3
+     1     2     3
+     1     2     3
+     1     2     3
+     1     2     3
+y1 =
+    10    10    10
+    11    11    11
+    12    12    12
+    13    13    13
+    14    14    14
+x2 =
+    10    11    12    13    14
+    10    11    12    13    14
+    10    11    12    13    14
+y2 =
+     1     1     1     1     1
+     2     2     2     2     2
+     3     3     3     3     3
+x3 =
+     1     2     3
+     1     2     3
+     1     2     3
+y3 =
+     1     1     1
+     2     2     2
+     3     3     3
+</pre><h2>Surface plot- Example<a name="11"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;clc;clf
+<span class="comment">%1. Define the vectors in the x y plane</span>
+<span class="comment">%(resolution and range)</span>
+x=-pi:0.1:pi;
+y=x;
+<span class="comment">%2. Generate the grid</span>
+[x1, y1]=meshgrid(x);
+<span class="comment">% 3. Evaluate the function</span>
+z=sin(x1).*y1.^3;
+<span class="comment">%plot3(x1,y1,z) % not recommended for sulface, plot 3D lines not a surface</span>
+</pre><img vspace="5" hspace="5" src="class_work_11_06.png"> <h2>mesh(X,Y,Z) &#8211; creates a 3D mesh of the function<a name="12"></a></h2><pre class="codeinput">mesh(x1,y1,z)
+grid <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="class_work_11_07.png"> <h2>surf(X,Y,Z) &#8211; creates a 3D surface of the function<a name="13"></a></h2><pre class="codeinput">surf(x1,y1,z)
+</pre><img vspace="5" hspace="5" src="class_work_11_08.png"> <h2>contour3(X,Y,Z,n_contours) &#8211; creates a 3D contour of the function<a name="14"></a></h2><pre class="codeinput">contour3(x1,y1,z,20)
+</pre><img vspace="5" hspace="5" src="class_work_11_09.png"> <h2>surfc(X,Y,Z)- draws a contour plot beneath the surface<a name="15"></a></h2><pre class="codeinput">surfc(x1,y1,z)
+</pre><img vspace="5" hspace="5" src="class_work_11_10.png"> <h2>Surface plot: z=sin(xy/50)^2+2exp(-(x^2+y^2)/1500)<a name="16"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;clf;close <span class="string">all</span>
+x1=-90:5:90;
+y1=x1;
+[x y]=meshgrid(x1);
+z=sind(x.*y/50).^2+2*exp(-(x.^2+y.^2)/1500);
+subplot(2,2,1)
+mesh(x,y,z)
+subplot(2,2,2)
+surf(x,y,z)
+subplot(2,2,3)
+contour3(x,y,z,50)
+subplot(2,2,4)
+surfc(x,y,z)
+</pre><img vspace="5" hspace="5" src="class_work_11_11.png"> <h2>View: determines the orientation of the axes<a name="17"></a></h2>
+         <h2>syntax: view(az,el) for azimuth and elevation<a name="18"></a></h2>
+         <h2>view ([x,y,z]) for viewpoint location<a name="19"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;clf;close <span class="string">all</span>
+x1=-10:0.5:10;
+[x y]=meshgrid(x1);
+z=0.1*(x.^2+y.^2);
+mesh(x,y,z)
+view(-130,35)
+</pre><img vspace="5" hspace="5" src="class_work_11_12.png"> <h2>%% colorbar<a name="20"></a></h2>
+         <p>Add a colorbar to a plot with the colorbar tool on the figure toolbar</p><pre class="codeinput">colorbar <span class="comment">%Colorbar showing color scale</span>
+</pre><img vspace="5" hspace="5" src="class_work_11_13.png"> <h2>3D box<a name="21"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;clf;close <span class="string">all</span>
+x=[0 1 1 0 0];
+y=[0 0 1 1 0];
+z=zeros(1,5);
+plot3(x,y,z)
+grid <span class="string">on</span>
+hold <span class="string">on</span>
+z1=z+2; <span class="comment">%z and z1 are the basis of the box</span>
+plot3(x,y,z1)
+<span class="comment">% plotting the sides</span>
+<span class="keyword">for</span> i=1:4
+plot3([x(i) x(i)],[y(i) y(i)],[z(i) z1(i)])
+<span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="class_work_11_14.png"> <h2>class_assign_11,3<a name="22"></a></h2>
+         <h2>see minsara.m<a name="23"></a></h2><pre class="codeinput">clc;clear <span class="string">all</span>;clf;
+minsara(6,3)
+</pre><pre class="codeoutput">teta =
+         0    1.0472    2.0944    3.1416    4.1888    5.2360    6.2832
+y =
+         0    0.8660    0.8660    0.0000   -0.8660   -0.8660   -0.0000
+s =
+krm
+</pre><img vspace="5" hspace="5" src="class_work_11_15.png"> <h2>class_assign_11,4<a name="24"></a></h2>
+         <h2>A tower of prisms<a name="25"></a></h2>
+         <p>Use the user-defined function minsara2 to build a tower of several prisms</p><pre class="codeinput">clc;clear <span class="string">all</span>;clf;close <span class="string">all</span>
+n=6; b=0;m=5;h=2;r=1
+<span class="keyword">for</span> i=0:m-1
+    minsara2(n,b+i*h,h,r)
+    hold <span class="string">on</span>
+   <span class="keyword">end</span>
+</pre><pre class="codeoutput">r =
+     1
+</pre><img vspace="5" hspace="5" src="class_work_11_16.png"> <h2>class_assign_11,5<a name="26"></a></h2>
+         <h2>Pyramid of prisms<a name="27"></a></h2><pre class="codeinput">   clc;clear <span class="string">all</span>;clf;
+clf, hold <span class="string">off</span>
+h=5; b=0;n=8;
+<span class="keyword">for</span> i=0:n-1
+minsara2(n,b+i*h,h,n-i)
+hold <span class="string">on</span>
+<span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="class_work_11_17.png"> <pre class="codeinput">clc;clear <span class="string">all</span>;clf
+flower(6,10,2)
+</pre><img vspace="5" hspace="5" src="class_work_11_18.png"> <p class="footer"><br>
+            Published with MATLAB&reg; 7.6<br></p>
+      </div>
+      <!--
+##### SOURCE BEGIN #####
+%% Class_Work_11
+%% 3-D Graphics
+%%  General
+clc;clear all;clc;clf
+%% Plot3 - 3D line plot
+% syntax: plot3(X1,Y1,Z1,S1,...)
+% where X1, Y1, Z1 can be scalars, vectors or matrices, plots one or more lines in
+% 3D space. S1 is a string determines line style, marker symbol, and color
+% of the plotted lines
+x=-10:0.1:10;
+y=x;
+z=0.1*(x.^2+y.^2);
+plot3(x,y,z)
+grid on
+%% class_assign_11,1
+t=0:0.1:20;
+x=(2+4*cos(t)).*cos(t);
+y=(2+4*cos(t)).*sin(t);
+z=t.^2;
+plot3(x,y,z), grid on
+%%  Create one Polygon
+clc;clear all;clf;
+R=10;n=6;%R is the radius, n is the number of the polygon's side
+%teta divide the circle arc into n equal segments
+teta=linspace(0,2*pi,n+1);
+ % x and y are the coordinates of the polygon's vertices
+x=R*cos(teta);
+y=R*sin(teta);
+plot(x,y)
+axis square
+axis on
+%% class_assign_11,2
+% see also polygon.m
+%n=input('the number of the polygon's sides? ');
+%k=input('the number of the polygons?');
+% for example:
+clc;clear all;clf;
+n=6,k=6
+teta=linspace(0,2*pi,n+1); 
+for i=1:k
+   x=i*cos(teta);
+   y=i*sin(teta);
+   plot(x,y);
+   hold on
+end
+axis square
+hold off
+axis off
+%% Spiral
+r=linspace(0,5,500);
+teta=linspace(0,10*pi,500);
+y=r.*sin(teta);
+x=r.*cos(teta);
+plot(x,y,'ro')
+%% Meshgrid-Generate two arrays containing the x- and y-coordinates
+%% at each position in a rectilinear grid
+%% Syntax: [X,Y]=meshgrid (x,y) 
+clc;clear all;clc;
+x=1:3;
+y=10:14;
+% [x1, y1]=meshgrid(x,y)
+ %returns two 5X3 matrices - the x1 matrix defines the x-coordinates
+ %and the y1 matrix the y-coordinates at each position in an 5 × 3 grid. T
+[x1, y1]=meshgrid(x,y)
+ [x2, y2]=meshgrid(y,x)
+ [x3, y3]=meshgrid(x)
+%% Surface plot- Example
+clc;clear all;clc;clf
+%1. Define the vectors in the x y plane
+%(resolution and range)
+x=-pi:0.1:pi;
+y=x;
+%2. Generate the grid
+[x1, y1]=meshgrid(x);
+% 3. Evaluate the function
+z=sin(x1).*y1.^3;
+%plot3(x1,y1,z) % not recommended for sulface, plot 3D lines not a surface
+
+%% mesh(X,Y,Z) – creates a 3D mesh of the function
+
+mesh(x1,y1,z)
+grid on
+%% surf(X,Y,Z) – creates a 3D surface of the function
+
+surf(x1,y1,z)
+%%  contour3(X,Y,Z,n_contours) – creates a 3D contour of the function
+
+contour3(x1,y1,z,20)
+%%  surfc(X,Y,Z)- draws a contour plot beneath the surface
+
+surfc(x1,y1,z)
+%%  Surface plot: z=sin(xy/50)^2+2exp(-(x^2+y^2)/1500)
+clc;clear all;clf;close all
+x1=-90:5:90;
+y1=x1;
+[x y]=meshgrid(x1);
+z=sind(x.*y/50).^2+2*exp(-(x.^2+y.^2)/1500);
+subplot(2,2,1)
+mesh(x,y,z)
+subplot(2,2,2)
+surf(x,y,z)
+subplot(2,2,3)
+contour3(x,y,z,50)
+subplot(2,2,4)
+surfc(x,y,z)
+%% View: determines the orientation of the axes
+%% syntax: view(az,el) for azimuth and elevation 
+%%  view ([x,y,z]) for viewpoint location
+clc;clear all;clf;close all
+x1=-10:0.5:10;
+[x y]=meshgrid(x1);
+z=0.1*(x.^2+y.^2);
+mesh(x,y,z)
+view(-130,35)
+%% %% colorbar
+% Add a colorbar to a plot with the colorbar tool on the figure toolbar
+colorbar %Colorbar showing color scale
+%% 3D box
+clc;clear all;clf;close all
+x=[0 1 1 0 0];
+y=[0 0 1 1 0];
+z=zeros(1,5);
+plot3(x,y,z)
+grid on
+hold on
+z1=z+2; %z and z1 are the basis of the box
+plot3(x,y,z1)
+% plotting the sides
+for i=1:4
+plot3([x(i) x(i)],[y(i) y(i)],[z(i) z1(i)])
+end
+%% class_assign_11,3
+%% see minsara.m
+clc;clear all;clf;
+minsara(6,3)
+%%  class_assign_11,4 
+%% A tower of prisms
+% Use the user-defined function minsara2 to build a tower of several prisms
+clc;clear all;clf;close all
+n=6; b=0;m=5;h=2;r=1
+for i=0:m-1
+    minsara2(n,b+i*h,h,r)
+    hold on
+   end
+ %%  class_assign_11,5
+  %% Pyramid of prisms
+   clc;clear all;clf;
+clf, hold off
+h=5; b=0;n=8;
+for i=0:n-1
+minsara2(n,b+i*h,h,n-i)
+hold on
+end
+%%
+clc;clear all;clf
+flower(6,10,2)
+
+
+
+##### SOURCE END #####
+-->
+   </body>
+</html>
